@@ -3351,11 +3351,12 @@ async function buildTasksPage(){
 
 async function switchMJRole(role){
   if(!S.user) return;
-  await fDB.ref(`users/${S.user.uid}/mjRole`).set(role);
   S.userData.mjRole = role;
   S.page = 'tasks';
   S.mjTab = role==='worker' ? 'browse' : 'mytasks';
   render();
+  // Save to Firebase in background
+  fDB.ref(`users/${S.user.uid}/mjRole`).set(role).catch(()=>{});
 }
 
 // ─── WORKER VIEW ───────────────────────────────────────
@@ -3394,7 +3395,13 @@ async function buildTaskBrowse(){
     .sort((a,b)=>(b.createdAt||0)-(a.createdAt||0));
 
   if(!tasks.length){
-    return html + `<div class="empty"><div class="ein">🔍</div><div class="etx">এই category তে কোনো কাজ নেই</div></div>`;
+    const isAll = filterCat==='all';
+    return html + `<div class="empty">
+      <div class="ein">💼</div>
+      <div class="etx" style="font-size:15px;font-weight:700;color:#0f172a;margin-bottom:8px">${isAll?'এখনো কোনো কাজ নেই':'এই category তে কাজ নেই'}</div>
+      <div style="font-size:12px;color:#64748b;line-height:1.6;margin-bottom:16px">${isAll?'কেউ এখনো task post করেনি। Buyer হয়ে প্রথম task post করো!':'অন্য category দেখো বা সব দেখতে "সব" চাপো।'}</div>
+      ${isAll?`<button class="btn bp bau" onclick="switchMJRole('buyer')">➕ Task Post করো</button>`:''}
+    </div>`;
   }
 
   tasks.forEach(t=>{
@@ -3646,7 +3653,12 @@ async function buildBuyerMyTasks(){
   </div>`;
 
   if(!tasks.length){
-    return html + `<div class="empty"><div class="ein">📋</div><div class="etx">কোনো task নেই। নতুন task post করুন!</div></div>`;
+    return html + `<div class="empty">
+      <div class="ein">📋</div>
+      <div class="etx" style="font-size:15px;font-weight:700;margin-bottom:8px">কোনো task নেই</div>
+      <div style="font-size:12px;color:#64748b;margin-bottom:16px">নতুন task post করুন। আগে deposit করতে হবে।</div>
+      <button class="btn bp bau" onclick="S.mjTab='posttask';render()">➕ Task Post করো</button>
+    </div>`;
   }
 
   tasks.forEach(t=>{
@@ -3670,7 +3682,7 @@ async function buildBuyerMyTasks(){
 }
 
 async function closeTask(taskId){
-  if(!confirm('এই task close করবেন?')) return;
+  if(!window.confirm('এই task close করবেন?')) return;
   await fDB.ref(`mj_tasks/${taskId}/status`).set('closed');
   // Refund remaining escrow (simplified)
   const snap = await fDB.ref(`mj_tasks/${taskId}`).once('value');
@@ -3725,7 +3737,7 @@ function buildPostTaskForm(){
         <span class="fw7 cgr" id="escrowCalc">৳0</span>
       </div>
     </div>
-    <button class="btn bp mt8" id="postTaskBtn">🚀 Task Post করুন</button>
+    <button class="btn bp mt8" id="postTaskBtn" onclick="submitPostTask()">🚀 Task Post করুন</button>
   </div>`;
 
   setTimeout(()=>{
@@ -3909,8 +3921,27 @@ function buildBuyerWallet(){
       <div id="dep_placeholder">📸 Screenshot Upload করুন</div>
       <input type="file" id="dep_img_input" accept="image/*" style="display:none">
     </div>
-    <button class="btn bp mt8" id="depSubmitBtn">📨 Deposit Request পাঠান</button>
+    <button class="btn bp mt8" id="depSubmitBtn" onclick="submitDepositRequest()">📨 Deposit Request পাঠান</button>
   </div>`;
+  // Wire image upload inline
+  setTimeout(()=>{
+    const di = document.getElementById('dep_img_input');
+    if(di) di.onchange = (e)=>{
+      const f=e.target.files[0]; if(!f) return;
+      if(f.size>2097152){toast('Max 2MB','e');return;}
+      const r=new FileReader();
+      r.onload=(ev)=>{
+        S.depImgData=ev.target.result;
+        const img=document.getElementById('dep_img_el');
+        if(img) img.src=ev.target.result;
+        const prev=document.getElementById('dep_img_preview');
+        const ph=document.getElementById('dep_placeholder');
+        if(prev) prev.style.display='block';
+        if(ph) ph.style.display='none';
+      };
+      r.readAsDataURL(f);
+    };
+  },200);
 }
 
 // ─── RATING SYSTEM ─────────────────────────────────────
@@ -4075,18 +4106,32 @@ async function loadAdminDeposits(c){
 // ─── ESCROW DEPOSIT SUBMIT ─────────────────────────────
 async function submitDepositRequest(){
   const uid = S.user?.uid;
-  const amt = parseFloat(document.getElementById('dep_amt')?.value)||0;
-  const txn = document.getElementById('dep_txn')?.value.trim()||'';
-  if(!amt||!txn){ toast('Amount ও TXN ID দিন','e'); return; }
-  const depData = {
-    uid, userName: S.userData.name||S.userData.email,
-    amount: amt, txnId: txn,
-    imgData: S.depImgData||'',
-    status:'pending', createdAt:Date.now(),
-  };
-  await fDB.ref('mj_deposits').push().set(depData);
-  toast('✅ Deposit request পাঠানো হয়েছে! Admin verify করবে।','s');
-  S.depImgData = null;
+  if(!uid){ toast('Login করুন','e'); return; }
+  const amtEl = document.getElementById('dep_amt');
+  const txnEl = document.getElementById('dep_txn');
+  const amt = parseFloat(amtEl?.value)||0;
+  const txn = txnEl?.value.trim()||'';
+  if(!amt||amt<50){ toast('Minimum ৳50 deposit করুন','e'); return; }
+  if(!txn){ toast('Transaction ID দিন','e'); return; }
+  const btn = document.getElementById('depSubmitBtn');
+  if(btn){ btn.disabled=true; btn.textContent='⏳ Sending…'; }
+  try {
+    const depData = {
+      uid,
+      userName: S.userData?.name||S.userData?.email||uid,
+      amount: amt, txnId: txn,
+      imgData: S.depImgData||'',
+      status:'pending', createdAt:Date.now(),
+    };
+    await fDB.ref('mj_deposits').push().set(depData);
+    // Notify admin via notices path
+    await fDB.ref('mj_admin_alerts').push({type:'deposit',uid,amount:amt,txnId:txn,createdAt:Date.now()});
+    toast('✅ Deposit request পাঠানো হয়েছে! Admin verify করলে balance আসবে।','s');
+    S.depImgData = null;
+    if(amtEl) amtEl.value='';
+    if(txnEl) txnEl.value='';
+  } catch(e){ toast('Error: '+e.message,'e'); }
+  if(btn){ btn.disabled=false; btn.textContent='📨 Deposit Request পাঠান'; }
 }
 
 // ─── HELPER: HTML Escape ───────────────────────────────
@@ -4096,8 +4141,49 @@ function escHtml(str){
 
 
 // ─── ATTACH MJ EVENTS AFTER RENDER ───────────────────
+// attachMJEvents moved to loader block above
+
+// ─── ASYNC PAGE LOADER PATCH ──────────────────────────
+// ─── ROBUST ASYNC MJ PAGE LOADER ─────────────────────
+const _origAttachAppEvents = attachAppEvents;
+function attachAppEvents(){
+  _origAttachAppEvents();
+  loadMJPage();
+}
+
+async function loadMJPage(){
+  try {
+    // Tasks Page
+    const tasksHolder = document.getElementById('tasksPageHolder');
+    if(tasksHolder){
+      const html = await buildTasksPage();
+      const el = document.getElementById('tasksPageHolder');
+      if(el){ el.outerHTML = html; }
+      attachMJEvents();
+      return;
+    }
+    // Task Detail Page
+    const detailHolder = document.getElementById('taskDetailHolder');
+    if(detailHolder){
+      const html = await buildTaskDetail();
+      const el = document.getElementById('taskDetailHolder');
+      if(el){ el.outerHTML = html; }
+      return;
+    }
+    // MJ Notifications Page
+    const notifsHolder = document.getElementById('mjNotifsHolder');
+    if(notifsHolder){
+      const html = await buildMJNotifications();
+      const el = document.getElementById('mjNotifsHolder');
+      if(el){ el.innerHTML = '<div class="ph"><div class="pt">🔔 MJ Notifications</div><div class="ps">তোমার সব notification এখানে</div></div>' + html; }
+      return;
+    }
+    // Always load notif count
+    await loadMJNotifications();
+  } catch(e){ console.error('MJ page load error:', e); }
+}
+
 function attachMJEvents(){
-  // Deposit submit
   const depBtn = document.getElementById('depSubmitBtn');
   if(depBtn) depBtn.onclick = submitDepositRequest;
   const depImg = document.getElementById('dep_img_input');
@@ -4108,37 +4194,15 @@ function attachMJEvents(){
       r.onload = (ev)=>{
         S.depImgData = ev.target.result;
         const el = document.getElementById('dep_img_el');
-        if(el){ el.src=ev.target.result; document.getElementById('dep_img_preview').style.display='block'; document.getElementById('dep_placeholder').style.display='none'; }
+        if(el){ el.src=ev.target.result; }
+        const prev = document.getElementById('dep_img_preview');
+        const ph = document.getElementById('dep_placeholder');
+        if(prev) prev.style.display='block';
+        if(ph) ph.style.display='none';
       };
       r.readAsDataURL(f);
     };
   }
-}
-
-// ─── ASYNC PAGE LOADER PATCH ──────────────────────────
-const _origAttach = attachAppEvents;
-function attachAppEvents(){
-  _origAttach();
-  // Load async pages
-  const tasksHolder = document.getElementById('tasksPageHolder');
-  if(tasksHolder){
-    buildTasksPage().then(html=>{ tasksHolder.outerHTML=html; attachMJEvents(); });
-  }
-  const detailHolder = document.getElementById('taskDetailHolder');
-  if(detailHolder){
-    buildTaskDetail().then(html=>{ detailHolder.outerHTML=html; });
-  }
-  const notifsHolder = document.getElementById('mjNotifsHolder');
-  if(notifsHolder){
-    buildMJNotifications().then(html=>{
-      notifsHolder.innerHTML=`<div class="ph"><div class="pt">🔔 MJ Notifications</div></div>`+html;
-    });
-  }
-  // Load MJ notification count on every render
-  loadMJNotifications().then(()=>{
-    const badge = document.getElementById('mjNotifBadge');
-    if(badge) badge.style.display = (S.mjNotifCount||0)>0?'block':'none';
-  });
 }
 
 </script>
