@@ -70,43 +70,6 @@ html,body{background:#f0f7ff;color:#0F172A;font-family:'DM Sans',sans-serif;min-
 .nav-mn{background:none;border:none;cursor:pointer;color:#2563eb;padding:5px;display:flex;align-items:center}
 
 /* BOTTOM NAV */
-
-/* ─── MICROJOB STYLES ─────────────────────────────────── */
-.mj-tab{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px;margin-bottom:14px;scrollbar-width:none}
-.mj-tab::-webkit-scrollbar{display:none}
-.mj-tb{padding:7px 14px;border-radius:9px;border:1.5px solid #dbeafe;background:#fff;color:#64748b;cursor:pointer;font-size:12px;font-weight:600;white-space:nowrap;transition:all .18s;font-family:'DM Sans',sans-serif}
-.mj-tb.on{background:linear-gradient(135deg,#2563eb,#059669);color:#fff;border-color:transparent;box-shadow:0 3px 12px rgba(37,99,235,.25)}
-.task-card{background:#fff;border:1.5px solid #dbeafe;border-radius:16px;padding:15px;margin-bottom:11px;box-shadow:0 2px 10px rgba(37,99,235,.05);cursor:pointer;transition:all .2s}
-.task-card:hover{transform:translateY(-2px);border-color:#93c5fd;box-shadow:0 6px 20px rgba(37,99,235,.12)}
-.task-cat{display:inline-flex;align-items:center;gap:4px;padding:3px 10px;border-radius:6px;font-size:10px;font-weight:700;margin-bottom:8px}
-.task-ttl{font-family:'Syne',sans-serif;font-size:15px;font-weight:700;color:#0f172a;margin-bottom:5px;line-height:1.35}
-.task-desc{font-size:12px;color:#64748b;margin-bottom:10px;line-height:1.5}
-.task-meta{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:6px}
-.task-price{font-family:'Syne',sans-serif;font-size:18px;font-weight:800;color:#059669}
-.task-info{font-size:11px;color:#94a3b8}
-.task-proof-box{background:#f8fafc;border:2px dashed #cbd5e1;border-radius:12px;padding:16px;text-align:center;cursor:pointer;transition:border .2s;margin-bottom:12px}
-.task-proof-box:hover{border-color:#2563eb;background:#eff6ff}
-.buyer-stat{background:linear-gradient(135deg,#eff6ff,#f0fdf4);border:1.5px solid #bfdbfe;border-radius:12px;padding:12px;text-align:center}
-.buyer-stat-v{font-family:'Syne',sans-serif;font-size:20px;font-weight:800;color:#0f172a}
-.buyer-stat-l{font-size:10px;color:#64748b;margin-top:2px}
-.escrow-box{background:linear-gradient(135deg,#fefce8,#f0fdf4);border:1.5px solid #fde047;border-radius:12px;padding:13px;margin-bottom:12px}
-.proof-img{width:100%;max-height:200px;object-fit:cover;border-radius:10px;margin-bottom:10px;border:1.5px solid #dbeafe}
-.role-switch{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:16px}
-.role-btn{padding:13px;border-radius:13px;border:2px solid #dbeafe;background:#fff;cursor:pointer;text-align:center;transition:all .2s;font-family:'DM Sans',sans-serif}
-.role-btn.active{border-color:#2563eb;background:rgba(37,99,235,.08)}
-.role-btn .rb-icon{font-size:28px;margin-bottom:4px}
-.role-btn .rb-title{font-size:13px;font-weight:700;color:#0f172a}
-.role-btn .rb-sub{font-size:10px;color:#64748b;margin-top:1px}
-.star-row{display:flex;gap:3px;margin-bottom:4px}
-.star{font-size:16px;cursor:pointer;transition:transform .15s}
-.star:hover{transform:scale(1.2)}
-.notif-dot{width:8px;height:8px;border-radius:50%;background:#ef4444;display:inline-block;margin-left:4px;animation:blink 1.5s infinite;vertical-align:middle}
-.dispute-card{background:rgba(220,38,38,.05);border:1.5px solid rgba(220,38,38,.2);border-radius:13px;padding:13px;margin-bottom:10px}
-.cat-chip{display:inline-flex;align-items:center;gap:4px;padding:4px 11px;border-radius:20px;font-size:11px;font-weight:600;cursor:pointer;border:1.5px solid #dbeafe;background:#fff;transition:all .18s;white-space:nowrap}
-.cat-chip.sel{background:#2563eb;color:#fff;border-color:#2563eb}
-.cats-row{display:flex;gap:7px;overflow-x:auto;padding-bottom:6px;margin-bottom:14px;scrollbar-width:none}
-.cats-row::-webkit-scrollbar{display:none}
-
 .bnav{position:fixed;bottom:0;left:0;right:0;z-index:88;background:rgba(255,255,255,.97);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-top:2px solid #bfdbfe;display:flex;padding:5px 0 calc(5px + env(safe-area-inset-bottom));box-shadow:0 -2px 12px rgba(37,99,235,.07)}
 .bni{flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;background:none;border:none;cursor:pointer;color:#94a3b8;transition:color .2s;padding:5px 0;font-family:'DM Sans',sans-serif}
 .bni.on{color:#2563eb}.bni .ic{font-size:20px}.bni .lb{font-size:10px;font-weight:600}
@@ -122,17 +85,17 @@ html,body{background:#f0f7ff;color:#0F172A;font-family:'DM Sans',sans-serif;min-
 .si-ico{font-size:17px}
 
 /* AUTH */
-.aw{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:22px 15px;background:linear-gradient(145deg,#eff6ff 0%,#f0fdf4 100%)}
-.ac{width:100%;max-width:400px;background:#ffffff;border:2px solid #bfdbfe;border-radius:22px;padding:28px 24px;animation:fadeUp .32s ease;box-shadow:0 20px 60px rgba(37,99,235,.12)}
+.aw{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:22px 15px;background:linear-gradient(160deg,#0f172a 0%,#1e3a5f 50%,#064e3b 100%)}
+.ac{width:100%;max-width:400px;background:rgba(255,255,255,.06);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1.5px solid rgba(255,255,255,.12);border-radius:22px;padding:28px 24px;animation:fadeUp .32s ease;box-shadow:0 20px 60px rgba(0,0,0,.4)}
 .a-ico{font-size:48px;animation:floatY 3s ease-in-out infinite;display:block;text-align:center;margin-bottom:9px}
-.a-brand{font-family:'Syne',sans-serif;font-size:24px;font-weight:800;background:linear-gradient(135deg,#2563eb,#059669);-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-align:center}
-.a-sub{font-size:12px;color:#64748b;text-align:center;margin-top:3px;margin-bottom:22px}
-.a-ttl{font-family:'Syne',sans-serif;font-size:17px;font-weight:700;margin-bottom:16px;color:#0f172a}
-.lbl{font-size:12px;color:#475569;margin-bottom:5px;display:block;font-weight:500}
+.a-brand{font-family:'Syne',sans-serif;font-size:24px;font-weight:800;background:linear-gradient(135deg,#60a5fa,#34d399);-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-align:center}
+.a-sub{font-size:12px;color:#94a3b8;text-align:center;margin-top:3px;margin-bottom:22px}
+.a-ttl{font-family:'Syne',sans-serif;font-size:17px;font-weight:700;margin-bottom:16px;color:#f1f5f9}
+.lbl{font-size:12px;color:#94a3b8;margin-bottom:5px;display:block;font-weight:500}
 
 /* INPUTS */
-.inp{width:100%;background:#f8fafc;border:1.5px solid #cbd5e1;border-radius:11px;padding:12px 15px;color:#0f172a;font-size:14px;outline:none;transition:border .18s;font-family:'DM Sans',sans-serif;display:block;margin-bottom:12px}
-.inp:focus{border-color:#2563eb;background:#fff}.inp::placeholder{color:#94a3b8}
+.inp{width:100%;background:rgba(255,255,255,.07);border:1.5px solid rgba(255,255,255,.12);border-radius:11px;padding:12px 15px;color:#f1f5f9;font-size:14px;outline:none;transition:border .18s;font-family:'DM Sans',sans-serif;display:block;margin-bottom:12px}
+.inp:focus{border-color:#60a5fa;background:rgba(255,255,255,.1)}.inp::placeholder{color:#64748b}
 textarea.inp{resize:none;min-height:80px}
 .ipw{position:relative;margin-bottom:12px}.ipw .inp{padding-right:44px;margin-bottom:0}
 .ipe{position:absolute;right:13px;top:50%;transform:translateY(-50%);background:none;border:none;cursor:pointer;color:#64748b;font-size:15px;padding:3px}
@@ -161,13 +124,13 @@ select.inp{cursor:pointer;appearance:none;background-image:url("data:image/svg+x
 .hg2{position:absolute;bottom:-22px;left:-22px;width:90px;height:90px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.1),transparent);pointer-events:none}
 
 /* STATS GRID */
-.sgd{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-bottom:12px}
+.sgd{display:grid;grid-template-columns:1fr 1fr 1fr;gap:9px;margin-bottom:12px}
 .sc{border:none;border-radius:14px;padding:11px 12px;box-shadow:0 4px 14px rgba(0,0,0,.10)}
 .sc-i{font-size:18px;margin-bottom:4px}.sc-v{font-family:'Syne',sans-serif;font-size:17px;font-weight:700;color:#fff}.sc-l{font-size:10px;color:rgba(255,255,255,.75);margin-top:1px}
-.sc-1{background:linear-gradient(135deg,#2563eb,#1d4ed8)}
-.sc-2{background:linear-gradient(135deg,#059669,#047857)}
-.sc-3{background:linear-gradient(135deg,#7c3aed,#6d28d9)}
-.sc-4{background:linear-gradient(135deg,#ea580c,#c2410c)}
+.sc-1{background:linear-gradient(135deg,#1e3a5f,#0f172a)}
+.sc-2{background:linear-gradient(135deg,#065f46,#022c22);box-shadow:0 6px 20px rgba(5,150,105,.25)}
+.sc-3{background:linear-gradient(135deg,#1e3a8a,#1e1b4b);box-shadow:0 6px 20px rgba(37,99,235,.25)}
+.sc-4{background:linear-gradient(135deg,#1a2f4a,#0f172a);box-shadow:0 6px 20px rgba(251,191,36,.15)}
 
 /* BADGES */
 .bdg{display:inline-flex;align-items:center;padding:2px 9px;border-radius:6px;font-size:10px;font-weight:600}
@@ -1085,7 +1048,29 @@ function finishAd(){
     cb();
   } else if(type==='withdraw' && cb){
     cb();
+  } else if(type==='socialUnlock'){
+    onAdCompleteForSocial();
   }
+}
+
+async function onAdCompleteForSocial(){
+  if(!S.user) return;
+  const uid=S.user.uid;
+  // localStorage এ save — Firebase call নেই
+  const key=`ez_ads_social_${uid}`;
+  const totalAds=(parseInt(localStorage.getItem(key)||'0'))+1;
+  localStorage.setItem(key, totalAds);
+  if(totalAds>=5){
+    const unlockAt=Date.now()+(24*60*60*1000);
+    await fDB.ref(`users/${uid}/socialUnlockAt`).set(unlockAt);
+    const uSnap=await fDB.ref(`users/${uid}`).once('value');
+    S.userData=uSnap.val();
+    localStorage.setItem(key,'0'); // reset
+    toast('✅ Social Tasks unlocked for 24 hours!','s');
+  } else {
+    toast(`📺 ${totalAds}/5 ads watched. ${5-totalAds} more to unlock!`,'s');
+  }
+  render();
 }
 
 async function onAdCompleteForWall(wallId){
@@ -1101,8 +1086,9 @@ async function onAdCompleteForWall(wallId){
     return;
   }
   prog.count=(prog.count||0)+1;
-  // Also increment global adsWatched
-  await fDB.ref(`users/${uid}/adsWatched`).transaction(v=>(v||0)+1);
+  // localStorage এ ads count — Firebase call নেই
+  const adsKey=`ez_ads_wall_${uid}`;
+  localStorage.setItem(adsKey, (parseInt(localStorage.getItem(adsKey)||'0')+1).toString());
   if(prog.count>=CFG.adsPerWall){
     prog.count=0;
     prog.unlockedAt=Date.now();
@@ -1117,15 +1103,25 @@ async function onAdCompleteForWall(wallId){
 
 // ─── RSS FEED SYSTEM ──────────────────────────────────
 async function loadPayoutSettings(){
-  const snap=await fDB.ref('settings/payout').once('value');
-  const d=snap.val();
-  if(d){
-    S.payoutMode=d.mode||'custom';
-    S.payoutRates=d.rates||S.payoutRates;
+  // Use cache
+  let cached = EZCache.get('settings_payout');
+  if(!cached){
+    const snap = await fDB.ref('settings/payout').once('value');
+    cached = snap.val()||{};
+    EZCache.set('settings_payout', cached);
   }
-  // Load site announcement
-  const aSnap=await fDB.ref('settings/announcement').once('value');
-  if(aSnap.val()) S.siteSettings={announcement:aSnap.val()};
+  if(cached){
+    S.payoutMode = cached.mode||'custom';
+    S.payoutRates = cached.rates||S.payoutRates;
+  }
+  // Load announcement — cached
+  let ann = EZCache.get('settings_announcement');
+  if(ann===null || ann===undefined){
+    const aSnap = await fDB.ref('settings/announcement').once('value');
+    ann = aSnap.val()||'';
+    EZCache.set('settings_announcement', ann);
+  }
+  if(ann) S.siteSettings={announcement:ann};
 }
 
 function getUserPayout(cpaAmount){
@@ -1720,28 +1716,75 @@ async function markOfferComplete(uid,wallId,amount){
   render();
 }
 
+// ─── SMART CACHE SYSTEM ───────────────────────────────
+const CACHE_TTL = 12 * 60 * 60 * 1000; // 12 hours in ms
+const EZCache = {
+  _store: {},
+
+  set(key, value){
+    this._store[key] = { value, ts: Date.now() };
+  },
+
+  get(key){
+    const item = this._store[key];
+    if(!item) return null;
+    // Expired?
+    if(Date.now() - item.ts > CACHE_TTL){
+      delete this._store[key];
+      return null;
+    }
+    return item.value;
+  },
+
+  invalidate(key){
+    delete this._store[key];
+  },
+
+  invalidateAll(){
+    this._store = {};
+  }
+};
+
+// Smart Firebase read — cache first, Firebase only if expired or forced
+async function smartRead(path, forceRefresh=false){
+  const cached = EZCache.get(path);
+  if(cached && !forceRefresh) return cached;
+  const snap = await fDB.ref(path).once('value');
+  const val = snap.val();
+  EZCache.set(path, val);
+  return val;
+}
+
 // ─── REALTIME LISTENERS ───────────────────────────────
 function setupListeners(uid){
   // Clean old
   S.unsubscribes.forEach(u=>u());
   S.unsubscribes=[];
-  // User data
+  // User data — realtime listener but throttled
   const uRef=fDB.ref(`users/${uid}`);
   const unsubUser=uRef.on('value',snap=>{
     S.userData=snap.val();
+    // Update cache
+    EZCache.set(`users/${uid}`, S.userData);
     if(S.userData?.banned){ doLogout(); toast(T('banned'),'e'); return; }
     updateNavBar();
   });
   S.unsubscribes.push(()=>uRef.off('value',unsubUser));
-  // Notices (new ones)
-  const nRef=fDB.ref('notices');
-  const unsubN=nRef.on('value',snap=>{
-    const data=snap.val()||{};
-    const readSnap=S.userData?.readNotices||{};
-    const unread=Object.entries(data).filter(([id])=>!readSnap[id]).map(([id,v])=>({...v,id}));
-    if(unread.length>0) activateNoticeDot(unread);
-  });
-  S.unsubscribes.push(()=>nRef.off('value',unsubN));
+  // Notices — check once, cache for 12h
+  loadNoticesCached(uid);
+}
+
+async function loadNoticesCached(uid){
+  const cacheKey = `notices_${uid}`;
+  let cached = EZCache.get(cacheKey);
+  if(!cached){
+    const snap = await fDB.ref('notices').orderByChild('createdAt').limitToLast(20).once('value');
+    cached = snap.val()||{};
+    EZCache.set(cacheKey, cached);
+  }
+  const readSnap = S.userData?.readNotices||{};
+  const unread = Object.entries(cached).filter(([id])=>!readSnap[id]).map(([id,v])=>({...v,id}));
+  if(unread.length>0) activateNoticeDot(unread);
 }
 
 function activateNoticeDot(notices){
@@ -1761,8 +1804,9 @@ async function checkActiveReferrals(){
   const refs=S.userData.pendingReferrals||{};
   let active=0;
   for(const uid of Object.keys(refs)){
-    const snap=await fDB.ref(`users/${uid}/adsWatched`).once('value');
-    if((snap.val()||0)>0) active++;
+    // localStorage থেকে check — Firebase call নেই
+    const ads=parseInt(localStorage.getItem(`ez_ads_wall_${uid}`)||'0');
+    if(ads>0) active++;
   }
   if(active!==(S.userData.activeReferrals||0)){
     await fDB.ref(`users/${S.user.uid}/activeReferrals`).set(active);
@@ -2022,16 +2066,16 @@ function renderApp(){
   else if(S.page==='admin' && S.userData.isAdmin) html+=buildAdmin();
   else if(S.page==='notices') html+=buildNotices();
   else if(S.page==='faq') html+=buildFAQ();
+  else if(S.page==='social') html+=buildSocialTasks();
   else if(S.page==='unlock') html+=buildUnlock(S.unlockWallId);
   else if(S.page==='wallview') html+=buildWallView(S.unlockWallId);
-  else if(S.page==='tasks') html+='<div id="tasksPageHolder"><div class="ldr"><div class="sp"></div></div></div>';
-  else if(S.page==='taskdetail') html+='<div id="taskDetailHolder"><div class="ldr"><div class="sp"></div></div></div>';
-  else if(S.page==='mjnotifs') html+='<div id="mjNotifsHolder"><div class="ldr"><div class="sp"></div></div></div>';
   else html+=buildHome();
   html+=`</div></div>`;
   html+=buildBottomNav();
   $('#app').innerHTML=html;
   attachAppEvents();
+  // Auto-load page data
+  if(S.page==='social') loadSocialTasks();
 }
 
 function buildNav(){
@@ -2056,12 +2100,11 @@ function buildNav(){
 }
 
 function buildBottomNav(){
-  const mjNotifBadge = (S.mjNotifCount||0)>0?`<div style="position:absolute;top:2px;right:12px;width:8px;height:8px;background:#ef4444;border-radius:50%"></div>`:'';
   const pages=[
     {p:'home',ic:'🏠',lb:T('db')},
     {p:'wallet',ic:'💰',lb:T('wl')},
-    {p:'tasks',ic:'💼',lb:'MicroJob'},
     {p:'offers',ic:'🎯',lb:T('of')},
+    {p:'social',ic:'📱',lb:'Social'},
     {p:'profile',ic:'👤',lb:T('pr')},
   ];
   return `<nav class="bnav">${pages.map(pg=>`
@@ -2078,8 +2121,7 @@ function buildSidebar(){
   <button class="si${S.page==='home'?' on':''}" data-page="home"><span class="si-ico">🏠</span>${T('db')}</button>
   <button class="si${S.page==='wallet'?' on':''}" data-page="wallet"><span class="si-ico">💰</span>${T('wl')}</button>
   <button class="si${S.page==='offers'?' on':''}" data-page="offers"><span class="si-ico">🎯</span>${T('of')}</button>
-  <button class="si${S.page==='tasks'?' on':''}" data-page="tasks"><span class="si-ico">💼</span>MicroJob ${(S.mjNotifCount||0)>0?`<span class="bdg bdr" style="margin-left:auto">${S.mjNotifCount}</span>`:''}</button>
-  <button class="si${S.page==='mjnotifs'?' on':''}" data-page="mjnotifs"><span class="si-ico">🔔</span>MJ Notifications ${(S.mjNotifCount||0)>0?`<span class="notif-dot"></span>`:''}</button>
+  <button class="si${S.page==='social'?' on':''}" data-page="social"><span class="si-ico">📱</span>Social Tasks</button>
   <div class="sdb-sg">Account</div>
   <button class="si${S.page==='profile'?' on':''}" data-page="profile"><span class="si-ico">👤</span>${T('pr')}</button>
   <button class="si${S.page==='notices'?' on':''}" data-page="notices"><span class="si-ico">📢</span>${T('ns')} ${S.noticeQueue.length>0?`<span class="bdg bdr" style="margin-left:auto">${S.noticeQueue.length}</span>`:''}</button>
@@ -2088,6 +2130,11 @@ function buildSidebar(){
   <a href="about.html" target="_blank" class="si" style="text-decoration:none;color:inherit"><span class="si-ico">🏢</span>About Us</a>
   <a href="contact.html" target="_blank" class="si" style="text-decoration:none;color:inherit"><span class="si-ico">📧</span>Contact</a>
   <a href="support.html" target="_blank" class="si" style="text-decoration:none;color:inherit"><span class="si-ico">🎫</span>Support</a>
+  <div class="sdb-sg">Services</div>
+  <a href="services.html" target="_blank" style="display:flex;align-items:center;gap:10px;background:linear-gradient(135deg,#1e40af,#065f46);border-radius:12px;padding:12px 14px;margin:0 0 8px;text-decoration:none">
+    <span style="font-size:18px">📱</span>
+    <div><div style="font-size:13px;font-weight:700;color:#fff">Need Followers?</div><div style="font-size:11px;color:rgba(255,255,255,.7);margin-top:1px">Buy Facebook, YouTube, Instagram</div></div>
+  </a>
   ${ud.isAdmin?`<div class="sdb-sg">Admin</div><button class="si${S.page==='admin'?' on':''}" data-page="admin"><span class="si-ico">⚙️</span>${T('ap')}</button>`:''}
   <div style="margin-top:auto;padding-top:12px;border-top:1px solid rgba(255,255,255,.07)">
   <button class="si" id="sbLang"><span class="si-ico">🌐</span>${T('ln')}: ${LANGS[S.lang]?.f||'🇺🇸'}</button>
@@ -2109,10 +2156,9 @@ function buildHome(){
     <div style="font-size:12px;color:#475569;margin-top:4px">Rate: ${fmt$(S.countryEarn)} per offer · ${S.country||'Detecting…'}</div>
   </div>
   <div class="sgd">
-    <div class="sc sc-1"><div class="sc-i">📺</div><div class="sc-v cp">${ud.adsWatched||0}</div><div class="sc-l">${T('aw')}</div></div>
-    <div class="sc sc-2"><div class="sc-i">✅</div><div class="sc-v cgr">${ud.offersCompleted||0}</div><div class="sc-l">${T('oc')}</div></div>
-    <div class="sc sc-3"><div class="sc-i">👥</div><div class="sc-v cb">${ud.activeReferrals||0}</div><div class="sc-l">${T('refCount')}</div></div>
-    <div class="sc sc-4"><div class="sc-i">💵</div><div class="sc-v cy">${fmt$(todayEarn)}</div><div class="sc-l">${T('todayEarn')}</div></div>
+    <div class="sc sc-2" style="border:1px solid rgba(52,211,153,.2)"><div class="sc-i">✅</div><div class="sc-v" style="color:#34d399">${ud.offersCompleted||0}</div><div class="sc-l">Offers Done</div></div>
+    <div class="sc sc-3" style="border:1px solid rgba(96,165,250,.2)"><div class="sc-i">👥</div><div class="sc-v" style="color:#60a5fa">${ud.activeReferrals||0}</div><div class="sc-l">Referrals</div></div>
+    <div class="sc sc-4" style="border:1px solid rgba(251,191,36,.2)"><div class="sc-i">💵</div><div class="sc-v" style="color:#fbbf24">${fmt$(todayEarn)}</div><div class="sc-l">Today Earned</div></div>
   </div>
   <div class="sl">${T('of')}</div>
   ${CFG.walls.slice(0,4).map(w=>`<div class="wc" data-goto-wall="${w.id}">
@@ -2493,6 +2539,149 @@ async function loadNotices(){
   });
 }
 
+// ─── SOCIAL TASKS PAGE ────────────────────────────────
+function buildSocialTasks(){
+  const ud=S.userData||{};
+  const uid=S.user?.uid||'';
+  const adsWatched=parseInt(localStorage.getItem(`ez_ads_social_${uid}`)||'0');
+  const unlockAt=ud.socialUnlockAt||0;
+  const now=Date.now();
+  const isUnlocked=unlockAt>now;
+
+  // Locked state — need to watch ads
+  if(!isUnlocked){
+    return `
+    <div class="ph">
+      <div class="pt">📱 Social Tasks</div>
+      <div class="ps">Complete social tasks & earn money</div>
+    </div>
+    <div class="card" style="text-align:center;padding:30px 20px">
+      <div style="font-size:48px;margin-bottom:14px">🔒</div>
+      <div style="font-family:'Syne',sans-serif;font-size:17px;font-weight:800;color:#0f172a;margin-bottom:8px">Social Tasks Locked</div>
+      <div style="font-size:13px;color:#64748b;margin-bottom:20px;line-height:1.7">Watch <strong>5 ads</strong> to unlock Social Tasks for <strong>24 hours</strong></div>
+      <div style="background:#eff6ff;border:1.5px solid #bfdbfe;border-radius:12px;padding:12px;margin-bottom:20px">
+        <div style="font-size:12px;color:#1e40af;font-weight:600">Ads watched: ${Math.min(adsWatched,5)}/5</div>
+        <div style="background:#dbeafe;border-radius:6px;height:6px;margin-top:8px;overflow:hidden">
+          <div style="background:linear-gradient(90deg,#2563eb,#059669);height:100%;width:${Math.min(adsWatched/5*100,100)}%;border-radius:6px"></div>
+        </div>
+      </div>
+      <button onclick="startAd(null,'socialUnlock',()=>{})" class="btn bp bau" style="width:100%">📺 Watch Ad to Unlock</button>
+    </div>`;
+  }
+
+  // Unlocked state
+  const remaining = Math.ceil((unlockAt-now)/3600000);
+  return `
+  <div class="ph">
+    <div class="pt">📱 Social Tasks</div>
+    <div class="ps">Complete social tasks & earn money</div>
+  </div>
+  <div style="background:rgba(5,150,105,.1);border:1.5px solid rgba(5,150,105,.3);border-radius:12px;padding:10px 14px;margin-bottom:14px;display:flex;align-items:center;gap:10px">
+    <div style="font-size:20px">✅</div>
+    <div style="font-size:12px;color:#065f46;font-weight:600">Unlocked for ${remaining} more hour${remaining!==1?'s':''}</div>
+  </div>
+
+  <!-- Available Tasks -->
+  <div id="socialTasksList"><div class="card" style="text-align:center;padding:30px"><div style="font-size:32px;margin-bottom:10px">⏳</div><div style="font-size:13px;color:#64748b">Loading tasks…</div></div></div>
+
+  <!-- My Submissions -->
+  <div class="card mt12">
+    <div style="font-family:'Syne',sans-serif;font-size:14px;font-weight:700;color:#1e40af;margin-bottom:12px">📋 My Submissions</div>
+    <div id="mySubmissions"><div style="font-size:12px;color:#64748b;text-align:center;padding:16px">Loading…</div></div>
+  </div>`;
+}
+
+// Load social tasks from Firebase
+async function loadSocialTasks(){
+  const el = document.getElementById('socialTasksList');
+  if(!el) return;
+  try{
+    // Use cache — only call Firebase if cache expired
+    let tasks = EZCache.get('socialTasks');
+    if(!tasks){
+      const snap = await fDB.ref('socialTasks').orderByChild('status').equalTo('active').once('value');
+      tasks = snap.val()||{};
+      EZCache.set('socialTasks', tasks);
+    }
+    const list = Object.entries(tasks);
+    if(!list.length){
+      el.innerHTML='<div class="card" style="text-align:center;padding:30px"><div style="font-size:32px;margin-bottom:10px">😔</div><div style="font-size:13px;color:#64748b">No tasks available right now.<br>Check back soon!</div></div>';
+      return;
+    }
+
+    // Get user's completed tasks — cached
+    const uid = S.user?.uid;
+    let completedTasks = {};
+    if(uid){
+      completedTasks = EZCache.get(`completedTasks_${uid}`);
+      if(!completedTasks){
+        const cSnap = await fDB.ref(`users/${uid}/completedTasks`).once('value');
+        completedTasks = cSnap.val()||{};
+        EZCache.set(`completedTasks_${uid}`, completedTasks);
+      }
+    }
+
+    el.innerHTML = list.map(([id,t])=>{
+      const isDone = completedTasks[id]===true;
+      return `
+      <div class="card mb10" style="${isDone?'opacity:.6':''}">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+          <div style="font-size:28px">${t.icon||'📱'}</div>
+          <div style="flex:1">
+            <div style="font-family:'Syne',sans-serif;font-size:13px;font-weight:700;color:#0f172a">${t.title}</div>
+            <div style="font-size:11px;color:#64748b;margin-top:2px">${t.platform} · Reward: <strong style="color:#059669">$${parseFloat(t.reward||0).toFixed(2)}</strong></div>
+          </div>
+          <div style="background:${isDone?'#f1f5f9':'linear-gradient(135deg,#059669,#047857)'};color:${isDone?'#94a3b8':'#fff'};border-radius:10px;padding:5px 10px;font-size:11px;font-weight:700;font-family:'Syne',sans-serif">${isDone?'✅ Done':'$'+parseFloat(t.reward||0).toFixed(2)}</div>
+        </div>
+        <div style="background:#f8fafc;border-radius:10px;padding:10px;font-size:12px;color:#475569;margin-bottom:10px;line-height:1.6">${t.description}</div>
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px">
+          <div style="font-size:11px;color:#94a3b8">Workers: ${t.currentWorkers||0}/${t.maxWorkers||'∞'}</div>
+          ${isDone?'<div style="font-size:11px;color:#059669;font-weight:600">✅ Already completed</div>':`<a href="${t.link}" target="_blank" style="background:rgba(37,99,235,.1);border:1px solid rgba(37,99,235,.2);border-radius:8px;padding:5px 12px;font-size:11px;font-weight:600;color:#2563eb;text-decoration:none">Open Link →</a>`}
+        </div>
+        ${isDone
+          ? `<div style="background:#f0fdf4;border:1.5px solid #86efac;border-radius:10px;padding:10px;text-align:center;font-size:12px;font-weight:600;color:#059669">✅ You have already completed this task</div>`
+          : `<div style="font-size:11px;color:#f59e0b;background:rgba(245,158,11,.1);border-radius:8px;padding:8px 10px;margin-bottom:10px">⚠️ After completing, send screenshot to WhatsApp for approval</div>
+        <button onclick="submitTaskProof('${id}','${t.title}','${t.reward}')" style="width:100%;background:linear-gradient(135deg,#25D366,#128C7E);border:none;border-radius:10px;padding:10px;font-size:13px;font-weight:700;color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;font-family:'DM Sans',sans-serif">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Done! Send Proof on WhatsApp
+        </button>`}
+      </div>`;
+    }).join('');
+
+    loadMySubmissions();
+  } catch(e){ el.innerHTML='<div class="card" style="text-align:center;padding:20px;color:#94a3b8;font-size:13px">Error loading tasks.</div>'; }
+}
+
+async function loadMySubmissions(){
+  const el = document.getElementById('mySubmissions');
+  if(!el||!S.user) return;
+  const snap = await fDB.ref('submissions').orderByChild('uid').equalTo(S.user.uid).once('value');
+  const subs = snap.val()||{};
+  const list = Object.values(subs).sort((a,b)=>b.createdAt-a.createdAt).slice(0,5);
+  if(!list.length){ el.innerHTML='<div style="font-size:12px;color:#64748b;text-align:center;padding:10px">No submissions yet.</div>'; return; }
+  el.innerHTML = list.map(s=>`
+  <div style="display:flex;align-items:center;justify-content:space-between;padding:10px 0;border-bottom:1px solid #f1f5f9">
+    <div><div style="font-size:13px;font-weight:600;color:#0f172a">${s.taskTitle}</div><div style="font-size:11px;color:#94a3b8;margin-top:2px">${new Date(s.createdAt).toLocaleDateString()}</div></div>
+    <div style="font-size:12px;font-weight:700;padding:4px 10px;border-radius:8px;${s.status==='approved'?'background:#f0fdf4;color:#059669':s.status==='rejected'?'background:#fef2f2;color:#dc2626':'background:#fefce8;color:#d97706'}">${s.status==='approved'?'✅ Approved':s.status==='rejected'?'❌ Rejected':'⏳ Pending'}</div>
+  </div>`).join('');
+}
+
+function submitTaskProof(taskId, taskTitle, reward){
+  const uid = S.user?.uid||'unknown';
+  const email = S.user?.email||'unknown';
+  const subId = 'SUB-'+Date.now();
+  // Save submission to Firebase
+  fDB.ref('submissions/'+subId).set({
+    subId, taskId, taskTitle, reward:parseFloat(reward), uid, email,
+    status:'pending', createdAt:Date.now()
+  });
+  // Open WhatsApp
+  const WA = '8801XXXXXXXXX'; // তোমার WhatsApp number দাও
+  const msg = `📱 *Social Task Proof — EarnZone Pro*\n\n*Submission ID:* ${subId}\n*Task:* ${taskTitle}\n*Reward:* $${reward}\n*User:* ${email}\n\n📸 Screenshot attached below 👇`;
+  window.open('https://wa.me/'+WA+'?text='+encodeURIComponent(msg),'_blank');
+  showToast('📱 Proof sent! Wait for approval.','green',4000);
+}
+
 // ─── FAQ PAGE ─────────────────────────────────────────
 function buildFAQ(){
   const faqs=[
@@ -2530,8 +2719,17 @@ function buildFAQ(){
 
 // ─── ADMIN PAGE ───────────────────────────────────────
 function buildAdmin(){
-  const tabs=['users','ws','ns','wls','ofs','mjtasks','mjdeps','sett'];
-  const tabLabels={users:T('us'),ws:T('ws'),ns:T('ns'),wls:T('wls'),ofs:T('ofs'),mjtasks:'💼 MJ Tasks',mjdeps:'💳 MJ Deposits',sett:'⚙️ Settings'};
+  const tabs=['users','ws','ns','wls','ofs','sett'];
+  const tabLabels={users:T('us'),ws:T('ws'),ns:T('ns'),wls:T('wls'),ofs:T('ofs'),sett:'⚙️ Settings'};
+  return `<div class="ph"><div class="pt">⚙️ ${T('ap')}</div></div>
+  <div class="ats">${tabs.map(t=>`<button class="at-btn${S.adminTab===t?' on':''}" data-atab="${t}">${tabLabels[t]||t}</button>`).join('')}</div>
+  <div id="adminContent"><div class="empty"><div class="ein">⏳</div></div></div>`;
+}
+
+// ─── ADMIN PAGE ───────────────────────────────────────
+function buildAdmin(){
+  const tabs=['users','ws','ns','wls','orders','tasks','sett'];
+  const tabLabels={users:T('us'),ws:T('ws'),ns:T('ns'),wls:T('wls'),orders:'🛒 Orders',tasks:'📱 Tasks','sett':'⚙️ Settings'};
   return `<div class="ph"><div class="pt">⚙️ ${T('ap')}</div></div>
   <div class="ats">${tabs.map(t=>`<button class="at-btn${S.adminTab===t?' on':''}" data-atab="${t}">${tabLabels[t]||t}</button>`).join('')}</div>
   <div id="adminContent"><div class="empty"><div class="ein">⏳</div></div></div>`;
@@ -2544,9 +2742,186 @@ async function loadAdminContent(){
   else if(S.adminTab==='ns') loadAdminNotices(c);
   else if(S.adminTab==='wls') loadAdminWalls(c);
   else if(S.adminTab==='ofs') await loadAdminOffers(c);
-  else if(S.adminTab==='mjtasks') await loadAdminTasks(c);
-  else if(S.adminTab==='mjdeps') await loadAdminDeposits(c);
+  else if(S.adminTab==='orders') await loadAdminOrders(c);
+  else if(S.adminTab==='tasks') await loadAdminTasks(c);
   else if(S.adminTab==='sett') await loadAdminSettings(c);
+}
+
+// ─── ADMIN ORDERS ─────────────────────────────────────
+async function loadAdminOrders(c){
+  const snap = await fDB.ref('orders').orderByChild('createdAt').once('value');
+  const data = snap.val()||{};
+  const orders = Object.entries(data).sort((a,b)=>b[1].createdAt-a[1].createdAt);
+  if(!orders.length){ c.innerHTML='<div class="empty"><div class="ein">📭</div><div>No orders yet</div></div>'; return; }
+  c.innerHTML = orders.map(([id,o])=>`
+  <div class="card mb10">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px">
+      <div>
+        <div style="font-size:11px;color:#94a3b8;font-weight:600">${id}</div>
+        <div style="font-family:'Syne',sans-serif;font-size:14px;font-weight:700;color:#0f172a;margin-top:2px">${o.platform} — ${o.service}</div>
+      </div>
+      <div style="font-size:13px;font-weight:700;padding:4px 10px;border-radius:8px;${o.status==='approved'?'background:#f0fdf4;color:#059669':o.status==='rejected'?'background:#fef2f2;color:#dc2626':'background:#fefce8;color:#d97706'}">${o.status==='approved'?'✅ Done':o.status==='rejected'?'❌ Rejected':'⏳ Pending'}</div>
+    </div>
+    <div style="font-size:12px;color:#475569;line-height:1.8">
+      <div>👤 <strong>${o.name}</strong> · 📞 ${o.phone}</div>
+      <div>📦 Qty: <strong>${o.qty?.toLocaleString()}</strong> · 💰 <strong>$${parseFloat(o.price||0).toFixed(2)}</strong></div>
+      <div>🔗 <a href="${o.link}" target="_blank" style="color:#2563eb">${o.link?.substring(0,40)}…</a></div>
+      ${o.notes?`<div>📝 ${o.notes}</div>`:''}
+    </div>
+    <div style="display:flex;gap:8px;margin-top:10px">
+      <button onclick="updateOrder('${id}','approved')" style="flex:1;background:linear-gradient(135deg,#059669,#047857);border:none;border-radius:9px;padding:8px;font-size:12px;font-weight:700;color:#fff;cursor:pointer">✅ Approve</button>
+      <button onclick="updateOrder('${id}','rejected')" style="flex:1;background:linear-gradient(135deg,#dc2626,#b91c1c);border:none;border-radius:9px;padding:8px;font-size:12px;font-weight:700;color:#fff;cursor:pointer">❌ Reject</button>
+      <button onclick="deleteOrder('${id}')" style="background:#f1f5f9;border:none;border-radius:9px;padding:8px 12px;font-size:12px;font-weight:700;color:#64748b;cursor:pointer">🗑️</button>
+    </div>
+  </div>`).join('');
+}
+
+async function updateOrder(id, status){
+  await fDB.ref('orders/'+id+'/status').set(status);
+  showToast(status==='approved'?'✅ Order approved!':'❌ Order rejected','green');
+  loadAdminOrders($('#adminContent'));
+}
+
+async function deleteOrder(id){
+  if(!confirm('Delete this order?')) return;
+  await fDB.ref('orders/'+id).remove();
+  showToast('🗑️ Order deleted','blue');
+  loadAdminOrders($('#adminContent'));
+}
+
+// ─── ADMIN SOCIAL TASKS ───────────────────────────────
+async function loadAdminTasks(c){
+  const snap = await fDB.ref('socialTasks').once('value');
+  const data = snap.val()||{};
+  const tasks = Object.entries(data).sort((a,b)=>b[1].createdAt-a[1].createdAt);
+
+  // Add task form
+  let html = `<div class="card mb12">
+    <div style="font-family:'Syne',sans-serif;font-size:14px;font-weight:700;color:#1e40af;margin-bottom:14px">➕ Add New Task</div>
+    <label style="font-size:12px;color:#475569;display:block;margin-bottom:4px;font-weight:600">Task Title *</label>
+    <input id="tTitle" type="text" placeholder="e.g. Subscribe to our YouTube channel" style="width:100%;padding:10px 13px;border:1.5px solid #dbeafe;border-radius:10px;font-size:13px;background:#f8fafc;color:#0f172a;outline:none;font-family:inherit;margin-bottom:10px">
+    <label style="font-size:12px;color:#475569;display:block;margin-bottom:4px;font-weight:600">Platform</label>
+    <select id="tPlatform" style="width:100%;padding:10px 13px;border:1.5px solid #dbeafe;border-radius:10px;font-size:13px;background:#f8fafc;color:#0f172a;outline:none;font-family:inherit;margin-bottom:10px">
+      <option value="🔵 Facebook">🔵 Facebook</option>
+      <option value="🔴 YouTube">🔴 YouTube</option>
+      <option value="💜 Instagram">💜 Instagram</option>
+    </select>
+    <label style="font-size:12px;color:#475569;display:block;margin-bottom:4px;font-weight:600">Task Link *</label>
+    <input id="tLink" type="url" placeholder="https://youtube.com/channel/..." style="width:100%;padding:10px 13px;border:1.5px solid #dbeafe;border-radius:10px;font-size:13px;background:#f8fafc;color:#0f172a;outline:none;font-family:inherit;margin-bottom:10px">
+    <label style="font-size:12px;color:#475569;display:block;margin-bottom:4px;font-weight:600">Description</label>
+    <input id="tDesc" type="text" placeholder="e.g. Subscribe and keep subscribed for 30 days" style="width:100%;padding:10px 13px;border:1.5px solid #dbeafe;border-radius:10px;font-size:13px;background:#f8fafc;color:#0f172a;outline:none;font-family:inherit;margin-bottom:10px">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px">
+      <div>
+        <label style="font-size:12px;color:#475569;display:block;margin-bottom:4px;font-weight:600">Reward ($)</label>
+        <input id="tReward" type="number" placeholder="0.10" step="0.01" min="0.01" style="width:100%;padding:10px 13px;border:1.5px solid #dbeafe;border-radius:10px;font-size:13px;background:#f8fafc;color:#0f172a;outline:none;font-family:inherit">
+      </div>
+      <div>
+        <label style="font-size:12px;color:#475569;display:block;margin-bottom:4px;font-weight:600">Max Workers</label>
+        <input id="tMax" type="number" placeholder="100" min="1" style="width:100%;padding:10px 13px;border:1.5px solid #dbeafe;border-radius:10px;font-size:13px;background:#f8fafc;color:#0f172a;outline:none;font-family:inherit">
+      </div>
+    </div>
+    <button onclick="addSocialTask()" class="btn bp bau">➕ Add Task</button>
+  </div>
+
+  <!-- Submissions Review -->
+  <div class="card mb12">
+    <div style="font-family:'Syne',sans-serif;font-size:14px;font-weight:700;color:#1e40af;margin-bottom:12px">📋 Pending Submissions</div>
+    <div id="pendingSubmissions"><div style="font-size:12px;color:#64748b;text-align:center;padding:16px">Loading…</div></div>
+  </div>
+
+  <!-- Existing Tasks -->
+  <div style="font-family:'Syne',sans-serif;font-size:13px;font-weight:700;color:#475569;margin-bottom:10px">📱 Active Tasks (${tasks.length})</div>`;
+
+  html += tasks.map(([id,t])=>`
+  <div class="card mb10">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+      <div style="font-family:'Syne',sans-serif;font-size:13px;font-weight:700">${t.title}</div>
+      <div style="font-size:11px;font-weight:700;padding:3px 8px;border-radius:6px;${t.status==='active'?'background:#f0fdf4;color:#059669':'background:#fef2f2;color:#dc2626'}">${t.status}</div>
+    </div>
+    <div style="font-size:12px;color:#475569;margin-bottom:8px">${t.platform} · $${t.reward} · Workers: ${t.currentWorkers||0}/${t.maxWorkers}</div>
+    <div style="display:flex;gap:8px">
+      <button onclick="toggleTask('${id}','${t.status}')" style="flex:1;background:${t.status==='active'?'#fef2f2':'#f0fdf4'};border:1px solid ${t.status==='active'?'#fca5a5':'#86efac'};border-radius:8px;padding:7px;font-size:11px;font-weight:700;color:${t.status==='active'?'#dc2626':'#059669'};cursor:pointer">${t.status==='active'?'⏸ Pause':'▶ Activate'}</button>
+      <button onclick="deleteTask('${id}')" style="background:#f1f5f9;border:1px solid #e2e8f0;border-radius:8px;padding:7px 12px;font-size:11px;font-weight:700;color:#64748b;cursor:pointer">🗑️</button>
+    </div>
+  </div>`).join('');
+
+  c.innerHTML = html;
+  loadPendingSubmissions();
+}
+
+async function loadPendingSubmissions(){
+  const el = document.getElementById('pendingSubmissions');
+  if(!el) return;
+  const snap = await fDB.ref('submissions').orderByChild('status').equalTo('pending').once('value');
+  const data = snap.val()||{};
+  const list = Object.entries(data).sort((a,b)=>b[1].createdAt-a[1].createdAt);
+  if(!list.length){ el.innerHTML='<div style="font-size:12px;color:#64748b;text-align:center;padding:10px">No pending submissions</div>'; return; }
+  el.innerHTML = list.map(([id,s])=>`
+  <div style="padding:12px 0;border-bottom:1px solid #f1f5f9">
+    <div style="display:flex;justify-content:space-between;margin-bottom:6px">
+      <div style="font-size:13px;font-weight:600">${s.taskTitle}</div>
+      <div style="font-size:12px;font-weight:700;color:#059669">$${parseFloat(s.reward||0).toFixed(2)}</div>
+    </div>
+    <div style="font-size:11px;color:#64748b;margin-bottom:8px">👤 ${s.email} · ${new Date(s.createdAt).toLocaleDateString()}</div>
+    <div style="display:flex;gap:8px">
+      <button onclick="approveSubmission('${id}','${s.uid}',${s.reward})" style="flex:1;background:linear-gradient(135deg,#059669,#047857);border:none;border-radius:8px;padding:7px;font-size:11px;font-weight:700;color:#fff;cursor:pointer">✅ Approve + Pay</button>
+      <button onclick="rejectSubmission('${id}')" style="flex:1;background:linear-gradient(135deg,#dc2626,#b91c1c);border:none;border-radius:8px;padding:7px;font-size:11px;font-weight:700;color:#fff;cursor:pointer">❌ Reject</button>
+    </div>
+  </div>`).join('');
+}
+
+async function approveSubmission(subId, uid, reward){
+  await fDB.ref('submissions/'+subId+'/status').set('approved');
+  await fDB.ref('users/'+uid+'/usdEarned').transaction(v=>(v||0)+parseFloat(reward));
+  await fDB.ref('stats/totalEarned').transaction(v=>(v||0)+parseFloat(reward));
+  const subSnap = await fDB.ref('submissions/'+subId).once('value');
+  const taskId = subSnap.val()?.taskId;
+  if(taskId){
+    await fDB.ref(`users/${uid}/completedTasks/${taskId}`).set(true);
+    // Invalidate completed tasks cache for this user
+    EZCache.invalidate(`completedTasks_${uid}`);
+  }
+  showToast('✅ Approved! $'+parseFloat(reward).toFixed(2)+' added','green');
+  loadPendingSubmissions();
+}
+
+async function rejectSubmission(subId){
+  await fDB.ref('submissions/'+subId+'/status').set('rejected');
+  showToast('❌ Submission rejected','blue');
+  loadPendingSubmissions();
+}
+
+async function addSocialTask(){
+  const title=document.getElementById('tTitle')?.value?.trim();
+  const platform=document.getElementById('tPlatform')?.value;
+  const link=document.getElementById('tLink')?.value?.trim();
+  const desc=document.getElementById('tDesc')?.value?.trim();
+  const reward=parseFloat(document.getElementById('tReward')?.value||0);
+  const maxW=parseInt(document.getElementById('tMax')?.value||100);
+  if(!title||!link||!reward){ showToast('Fill all required fields','blue'); return; }
+  const id='TASK-'+Date.now();
+  await fDB.ref('socialTasks/'+id).set({
+    id, title, platform, link, description:desc||title,
+    reward, maxWorkers:maxW, currentWorkers:0,
+    icon: platform.includes('Facebook')?'🔵':platform.includes('YouTube')?'🔴':'💜',
+    status:'active', createdAt:Date.now()
+  });
+  showToast('✅ Task added!','green');
+  loadAdminTasks($('#adminContent'));
+}
+
+async function toggleTask(id, currentStatus){
+  const newStatus = currentStatus==='active'?'paused':'active';
+  await fDB.ref('socialTasks/'+id+'/status').set(newStatus);
+  showToast(newStatus==='active'?'▶ Task activated':'⏸ Task paused','blue');
+  loadAdminTasks($('#adminContent'));
+}
+
+async function deleteTask(id){
+  if(!confirm('Delete this task?')) return;
+  await fDB.ref('socialTasks/'+id).remove();
+  showToast('🗑️ Task deleted','blue');
+  loadAdminTasks($('#adminContent'));
 }
 
 async function loadAdminUsers(c){
@@ -3275,11 +3650,13 @@ async function saveAnnouncement(){
   const val=document.getElementById('announcementInput')?.value?.trim()||'';
   await fDB.ref('settings/announcement').set(val);
   S.siteSettings={announcement:val};
+  EZCache.invalidate('settings_announcement');
   showToast('✅ Announcement saved!','green');
 }
 async function clearAnnouncement(){
   await fDB.ref('settings/announcement').set('');
   S.siteSettings={announcement:''};
+  EZCache.invalidate('settings_announcement');
   const inp=document.getElementById('announcementInput');
   if(inp) inp.value='';
   showToast('🗑️ Announcement cleared','blue');
@@ -3297,915 +3674,7 @@ console.log('%c◆ EarnZone Pro v3 — RSS + Custom Payout + Postback', 'color:#
 </div>
 
 <!-- Native Banner -->
-<script async="async" data-cfasync="false" src="https://pl29327203.profitablecpmratenetwork.com/71a6c6e0d4a4a4c387b3be64cbb9dc23/invoke.js">
-// ═══════════════════════════════════════════════════════
-// ─── MICROJOB SYSTEM ────────────────────────────────────
-// ═══════════════════════════════════════════════════════
-
-// Task Categories
-const TASK_CATS = [
-  {id:'all',    label:'সব', icon:'🌐', color:'#2563eb'},
-  {id:'social', label:'Social Media', icon:'📱', color:'#a855f7'},
-  {id:'data',   label:'Data Entry', icon:'📋', color:'#0891b2'},
-  {id:'writing',label:'লেখা', icon:'✍️', color:'#d97706'},
-  {id:'app',    label:'App Install', icon:'📲', color:'#059669'},
-  {id:'survey', label:'Survey', icon:'📊', color:'#7c3aed'},
-  {id:'video',  label:'Video Watch', icon:'▶️', color:'#dc2626'},
-  {id:'design', label:'Design', icon:'🎨', color:'#e11d48'},
-  {id:'review', label:'Review', icon:'⭐', color:'#f59e0b'},
-  {id:'other',  label:'অন্যান্য', icon:'🔧', color:'#475569'},
-];
-
-const CAT_COLORS = {};
-TASK_CATS.forEach(c=>CAT_COLORS[c.id]=c.color);
-
-// ─── BUILD TASKS PAGE (Worker View) ────────────────────
-async function buildTasksPage(){
-  const ud = S.userData||{};
-  const role = ud.mjRole||'worker';
-
-  // Role switch header
-  let html = `<div class="ph"><div class="pt">💼 MicroJob</div><div class="ps">কাজ করুন বা কাজ দিন</div></div>`;
-
-  // Role Toggle
-  html += `<div class="role-switch mb12">
-    <div class="role-btn${role==='worker'?' active':''}" onclick="switchMJRole('worker')">
-      <div class="rb-icon">🛠️</div>
-      <div class="rb-title">Worker</div>
-      <div class="rb-sub">কাজ করে টাকা আয় করুন</div>
-    </div>
-    <div class="role-btn${role==='buyer'?' active':''}" onclick="switchMJRole('buyer')">
-      <div class="rb-icon">📢</div>
-      <div class="rb-title">Buyer</div>
-      <div class="rb-sub">কাজ পোস্ট করুন</div>
-    </div>
-  </div>`;
-
-  if(role==='worker'){
-    html += await buildWorkerView();
-  } else {
-    html += await buildBuyerView();
-  }
-  return html;
-}
-
-async function switchMJRole(role){
-  if(!S.user) return;
-  S.userData.mjRole = role;
-  S.page = 'tasks';
-  S.mjTab = role==='worker' ? 'browse' : 'mytasks';
-  render();
-  // Save to Firebase in background
-  fDB.ref(`users/${S.user.uid}/mjRole`).set(role).catch(()=>{});
-}
-
-// ─── WORKER VIEW ───────────────────────────────────────
-async function buildWorkerView(){
-  const tab = S.mjTab||'browse';
-  let html = `<div class="mj-tab">
-    <button class="mj-tb${tab==='browse'?' on':''}" onclick="S.mjTab='browse';render()">🔍 কাজ খুঁজুন</button>
-    <button class="mj-tb${tab==='applied'?' on':''}" onclick="S.mjTab='applied';render()">📨 Applied</button>
-    <button class="mj-tb${tab==='active'?' on':''}" onclick="S.mjTab='active';render()">⚡ Active</button>
-    <button class="mj-tb${tab==='done'?' on':''}" onclick="S.mjTab='done';render()">✅ Completed</button>
-  </div>`;
-
-  if(tab==='browse') html += await buildTaskBrowse();
-  else if(tab==='applied') html += await buildWorkerApplied();
-  else if(tab==='active') html += await buildWorkerActive();
-  else if(tab==='done') html += await buildWorkerDone();
-  return html;
-}
-
-async function buildTaskBrowse(){
-  const filterCat = S.mjCatFilter||'all';
-  // Category chips
-  let html = `<div class="cats-row">`;
-  TASK_CATS.forEach(c=>{
-    html += `<div class="cat-chip${filterCat===c.id?' sel':''}" onclick="S.mjCatFilter='${c.id}';render()">${c.icon} ${c.label}</div>`;
-  });
-  html += `</div>`;
-
-  // Load tasks from Firebase
-  const snap = await fDB.ref('mj_tasks').orderByChild('status').equalTo('open').once('value');
-  const data = snap.val()||{};
-  const tasks = Object.entries(data)
-    .map(([id,t])=>({...t,id}))
-    .filter(t=> filterCat==='all' || t.category===filterCat)
-    .filter(t=> t.slotsLeft > 0)
-    .sort((a,b)=>(b.createdAt||0)-(a.createdAt||0));
-
-  if(!tasks.length){
-    const isAll = filterCat==='all';
-    return html + `<div class="empty">
-      <div class="ein">💼</div>
-      <div class="etx" style="font-size:15px;font-weight:700;color:#0f172a;margin-bottom:8px">${isAll?'এখনো কোনো কাজ নেই':'এই category তে কাজ নেই'}</div>
-      <div style="font-size:12px;color:#64748b;line-height:1.6;margin-bottom:16px">${isAll?'কেউ এখনো task post করেনি। Buyer হয়ে প্রথম task post করো!':'অন্য category দেখো বা সব দেখতে "সব" চাপো।'}</div>
-      ${isAll?`<button class="btn bp bau" onclick="switchMJRole('buyer')">➕ Task Post করো</button>`:''}
-    </div>`;
-  }
-
-  tasks.forEach(t=>{
-    const catInfo = TASK_CATS.find(c=>c.id===t.category)||TASK_CATS[0];
-    html += `<div class="task-card" onclick="openTaskDetail('${t.id}')">
-      <div class="task-cat" style="background:${catInfo.color}18;color:${catInfo.color}">${catInfo.icon} ${catInfo.label}</div>
-      <div class="task-ttl">${escHtml(t.title||'')}</div>
-      <div class="task-desc">${escHtml((t.description||'').slice(0,90))}${(t.description||'').length>90?'…':''}</div>
-      <div class="task-meta">
-        <div class="task-price">৳${(t.payBDT||0).toFixed(0)} <span style="font-size:11px;color:#64748b;font-weight:400">/ টাস্ক</span></div>
-        <div style="display:flex;gap:8px;align-items:center">
-          <span class="task-info">⏱ ${t.deadline||'N/A'}</span>
-          <span class="task-info">👥 ${t.slotsLeft||0} slot</span>
-          <span class="bdg bdg2 xs">${t.proofType==='screenshot'?'📸':'📝'}</span>
-        </div>
-      </div>
-    </div>`;
-  });
-  return html;
-}
-
-async function openTaskDetail(taskId){
-  S.currentTaskId = taskId;
-  S.page = 'taskdetail';
-  render();
-}
-
-async function buildTaskDetail(){
-  const taskId = S.currentTaskId;
-  if(!taskId) return `<div class="empty"><div class="ein">❌</div></div>`;
-  const snap = await fDB.ref(`mj_tasks/${taskId}`).once('value');
-  const t = snap.val();
-  if(!t) return `<div class="empty"><div class="ein">❌</div><div class="etx">Task পাওয়া যায়নি</div></div>`;
-
-  const uid = S.user?.uid;
-  // Check if already applied
-  const appSnap = await fDB.ref(`mj_applications/${taskId}/${uid}`).once('value');
-  const myApp = appSnap.val();
-
-  const catInfo = TASK_CATS.find(c=>c.id===t.category)||TASK_CATS[0];
-
-  let html = `<div style="padding:14px 0 8px;display:flex;align-items:center;gap:10px">
-    <button class="btn bh bau bsm" onclick="S.page='tasks';render()">← Back</button>
-    <div class="task-cat" style="background:${catInfo.color}18;color:${catInfo.color}">${catInfo.icon} ${catInfo.label}</div>
-  </div>
-  <div class="card">
-    <div class="task-ttl" style="font-size:18px;margin-bottom:8px">${escHtml(t.title||'')}</div>
-    <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px">
-      <span class="bdg bdg2">💰 ৳${(t.payBDT||0).toFixed(0)}</span>
-      <span class="bdg bdy">⏱ ${t.deadline||'—'}</span>
-      <span class="bdg bdb">👥 ${t.slotsLeft||0} slots বাকি</span>
-    </div>
-    <div class="sl">কাজের বিবরণ</div>
-    <div style="font-size:13px;color:#374151;line-height:1.75;background:#f8fafc;border-radius:10px;padding:13px;margin-bottom:14px;white-space:pre-wrap">${escHtml(t.description||'')}</div>
-    ${t.requirements?`<div class="sl">Requirements</div><div style="font-size:13px;color:#374151;line-height:1.7;background:#fefce8;border:1px solid #fde047;border-radius:10px;padding:13px;margin-bottom:14px">${escHtml(t.requirements)}</div>`:''}
-    <div class="sl">Proof Type</div>
-    <div style="font-size:13px;color:#0f172a;margin-bottom:14px">${t.proofType==='screenshot'?'📸 Screenshot জমা দিতে হবে':'📝 Text/Link জমা দিতে হবে'}</div>
-  </div>`;
-
-  if(myApp){
-    const statusMap = {pending:'🟡 অপেক্ষায় আছে',approved:'✅ Approved — Payment হবে',rejected:'❌ Rejected'};
-    html += `<div class="card" style="text-align:center;border-color:#bfdbfe">
-      <div style="font-size:28px;margin-bottom:8px">${myApp.status==='approved'?'🎉':myApp.status==='rejected'?'😞':'⏳'}</div>
-      <div class="fw7">${statusMap[myApp.status]||myApp.status}</div>
-      ${myApp.status==='rejected'&&myApp.note?`<div class="xs mu mt8">Note: ${escHtml(myApp.note)}</div>`:''}
-    </div>`;
-  } else if(t.slotsLeft > 0 && t.status==='open'){
-    // Apply form
-    html += `<div class="card">
-      <div class="card-hd">📨 Apply করুন</div>`;
-
-    if(t.proofType==='screenshot'){
-      html += `<div class="task-proof-box" id="proofDropZone" onclick="document.getElementById('proofFileInput').click()">
-        <div id="proofPreview" style="display:none"><img class="proof-img" id="proofImgEl" src=""></div>
-        <div id="proofPlaceholder">
-          <div style="font-size:32px;margin-bottom:6px">📸</div>
-          <div style="font-size:13px;font-weight:600;color:#475569">Screenshot Upload করুন</div>
-          <div class="xs mu mt8">JPG, PNG — max 2MB</div>
-        </div>
-        <input type="file" id="proofFileInput" accept="image/*" style="display:none">
-      </div>`;
-    } else {
-      html += `<label class="lbl">আপনার কাজের প্রমাণ (link/text)</label>
-      <textarea class="inp" id="proofTextEl" rows="4" placeholder="কাজ করার পর link বা description দিন..."></textarea>`;
-    }
-
-    html += `<button class="btn bp" id="applyTaskBtn">📨 Apply করুন</button>
-    </div>`;
-
-    // Attach apply events after render
-    setTimeout(()=>{
-      const proofFile = document.getElementById('proofFileInput');
-      if(proofFile){
-        proofFile.onchange = (e)=>{
-          const f = e.target.files[0];
-          if(!f) return;
-          if(f.size > 2097152){ toast('File too large (max 2MB)','e'); return; }
-          const reader = new FileReader();
-          reader.onload = (ev)=>{
-            S.proofDataUrl = ev.target.result;
-            const img = document.getElementById('proofImgEl');
-            if(img){ img.src = ev.target.result; }
-            document.getElementById('proofPreview').style.display='block';
-            document.getElementById('proofPlaceholder').style.display='none';
-          };
-          reader.readAsDataURL(f);
-        };
-      }
-      const applyBtn = document.getElementById('applyTaskBtn');
-      if(applyBtn) applyBtn.onclick = ()=>submitTaskApplication(taskId, t);
-    }, 100);
-  } else {
-    html += `<div class="card" style="text-align:center"><div class="xs mu">এই task এর সব slot পূর্ণ হয়ে গেছে।</div></div>`;
-  }
-  return html;
-}
-
-async function submitTaskApplication(taskId, task){
-  const uid = S.user?.uid;
-  if(!uid){ toast('Login করুন','e'); return; }
-  const btn = document.getElementById('applyTaskBtn');
-  if(btn){ btn.disabled=true; btn.textContent='⏳ Submitting…'; }
-
-  let proofData = '';
-  if(task.proofType==='screenshot'){
-    if(!S.proofDataUrl){ toast('Screenshot দিন','e'); if(btn){btn.disabled=false;btn.textContent='📨 Apply করুন';}return; }
-    proofData = S.proofDataUrl;
-  } else {
-    const el = document.getElementById('proofTextEl');
-    proofData = el?.value.trim()||'';
-    if(!proofData){ toast('Proof দিন','e'); if(btn){btn.disabled=false;btn.textContent='📨 Apply করুন';}return; }
-  }
-
-  const appData = {
-    taskId, uid,
-    userName: S.userData.name||S.userData.email,
-    proofData,
-    proofType: task.proofType,
-    payBDT: task.payBDT||0,
-    status: 'pending',
-    appliedAt: Date.now(),
-    buyerUid: task.buyerUid,
-    taskTitle: task.title,
-  };
-
-  await fDB.ref(`mj_applications/${taskId}/${uid}`).set(appData);
-  // Also store under user's applications for easy retrieval
-  await fDB.ref(`mj_user_apps/${uid}/${taskId}`).set({taskId, status:'pending', appliedAt:Date.now(), taskTitle:task.title, payBDT:task.payBDT||0});
-  // Notify buyer
-  await fDB.ref(`mj_notifications/${task.buyerUid}`).push({
-    type:'new_application', taskId, taskTitle:task.title,
-    workerName: S.userData.name||S.userData.email,
-    createdAt: Date.now(), read:false,
-  });
-
-  S.proofDataUrl = null;
-  toast('✅ Application জমা হয়েছে!','s');
-  S.page='tasks'; S.mjTab='applied'; render();
-}
-
-async function buildWorkerApplied(){
-  const uid = S.user?.uid;
-  const snap = await fDB.ref(`mj_user_apps/${uid}`).once('value');
-  const data = snap.val()||{};
-  const apps = Object.values(data).filter(a=>a.status==='pending').sort((a,b)=>b.appliedAt-a.appliedAt);
-  if(!apps.length) return `<div class="empty"><div class="ein">📨</div><div class="etx">কোনো pending application নেই</div></div>`;
-  let html = '';
-  apps.forEach(a=>{
-    html += `<div class="task-card">
-      <div class="task-ttl">${escHtml(a.taskTitle||'')}</div>
-      <div class="task-meta">
-        <span class="task-price" style="font-size:14px">৳${a.payBDT||0}</span>
-        <span class="bdg bdy">⏳ Pending</span>
-      </div>
-      <div class="xs mu mt8">${fmtD(a.appliedAt)}</div>
-    </div>`;
-  });
-  return html;
-}
-
-async function buildWorkerActive(){
-  const uid = S.user?.uid;
-  const snap = await fDB.ref(`mj_user_apps/${uid}`).once('value');
-  const data = snap.val()||{};
-  const apps = Object.values(data).filter(a=>a.status==='approved').sort((a,b)=>b.appliedAt-a.appliedAt);
-  if(!apps.length) return `<div class="empty"><div class="ein">⚡</div><div class="etx">কোনো approved task নেই</div></div>`;
-  let html = `<div style="background:rgba(5,150,105,.08);border:1px solid #86efac;border-radius:10px;padding:10px 13px;font-size:12px;color:#15803d;margin-bottom:12px">✅ এই tasks গুলোতে payment আসবে আপনার wallet এ।</div>`;
-  apps.forEach(a=>{
-    html += `<div class="task-card">
-      <div class="task-ttl">${escHtml(a.taskTitle||'')}</div>
-      <div class="task-meta">
-        <span class="task-price" style="font-size:14px">৳${a.payBDT||0}</span>
-        <span class="bdg bdg2">✅ Approved</span>
-      </div>
-    </div>`;
-  });
-  return html;
-}
-
-async function buildWorkerDone(){
-  const uid = S.user?.uid;
-  const snap = await fDB.ref(`mj_user_apps/${uid}`).once('value');
-  const data = snap.val()||{};
-  const apps = Object.values(data).filter(a=>a.status==='rejected').sort((a,b)=>b.appliedAt-a.appliedAt);
-  if(!apps.length) return `<div class="empty"><div class="ein">✅</div><div class="etx">কোনো rejected task নেই — দারুণ!</div></div>`;
-  let html = '';
-  apps.forEach(a=>{
-    html += `<div class="task-card" style="border-color:rgba(220,38,38,.2)">
-      <div class="task-ttl">${escHtml(a.taskTitle||'')}</div>
-      <div class="task-meta">
-        <span class="task-price" style="font-size:14px;color:#dc2626">৳${a.payBDT||0}</span>
-        <span class="bdg bdr">❌ Rejected</span>
-      </div>
-      ${a.note?`<div class="xs mu mt8">Note: ${escHtml(a.note)}</div>`:''}
-    </div>`;
-  });
-  return html;
-}
-
-// ─── BUYER VIEW ────────────────────────────────────────
-async function buildBuyerView(){
-  const tab = S.mjTab||'mytasks';
-  let html = `<div class="mj-tab">
-    <button class="mj-tb${tab==='mytasks'?' on':''}" onclick="S.mjTab='mytasks';render()">📋 আমার Tasks</button>
-    <button class="mj-tb${tab==='posttask'?' on':''}" onclick="S.mjTab='posttask';render()">➕ Task Post</button>
-    <button class="mj-tb${tab==='review_apps'?' on':''}" onclick="S.mjTab='review_apps';render()">📨 Applications</button>
-    <button class="mj-tb${tab==='buyer_wallet'?' on':''}" onclick="S.mjTab='buyer_wallet';render()">💰 Deposit</button>
-  </div>`;
-
-  if(tab==='mytasks') html += await buildBuyerMyTasks();
-  else if(tab==='posttask') html += buildPostTaskForm();
-  else if(tab==='review_apps') html += await buildReviewApplications();
-  else if(tab==='buyer_wallet') html += buildBuyerWallet();
-  return html;
-}
-
-async function buildBuyerMyTasks(){
-  const uid = S.user?.uid;
-  const snap = await fDB.ref('mj_tasks').orderByChild('buyerUid').equalTo(uid).once('value');
-  const data = snap.val()||{};
-  const tasks = Object.entries(data).map(([id,t])=>({...t,id})).sort((a,b)=>b.createdAt-a.createdAt);
-
-  // Stats
-  const ud = S.userData||{};
-  let html = `<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:14px">
-    <div class="buyer-stat"><div class="buyer-stat-v">${tasks.filter(t=>t.status==='open').length}</div><div class="buyer-stat-l">Active</div></div>
-    <div class="buyer-stat"><div class="buyer-stat-v">${tasks.length}</div><div class="buyer-stat-l">Total</div></div>
-    <div class="buyer-stat"><div class="buyer-stat-v">৳${(ud.mjBalance||0).toFixed(0)}</div><div class="buyer-stat-l">Balance</div></div>
-  </div>`;
-
-  if(!tasks.length){
-    return html + `<div class="empty">
-      <div class="ein">📋</div>
-      <div class="etx" style="font-size:15px;font-weight:700;margin-bottom:8px">কোনো task নেই</div>
-      <div style="font-size:12px;color:#64748b;margin-bottom:16px">নতুন task post করুন। আগে deposit করতে হবে।</div>
-      <button class="btn bp bau" onclick="S.mjTab='posttask';render()">➕ Task Post করো</button>
-    </div>`;
-  }
-
-  tasks.forEach(t=>{
-    const catInfo = TASK_CATS.find(c=>c.id===t.category)||TASK_CATS[0];
-    const statusColor = t.status==='open'?'bdg2':'bdy';
-    html += `<div class="task-card">
-      <div class="task-cat" style="background:${catInfo.color}18;color:${catInfo.color}">${catInfo.icon} ${catInfo.label}</div>
-      <div class="task-ttl">${escHtml(t.title||'')}</div>
-      <div class="task-meta">
-        <span class="task-price" style="font-size:14px">৳${t.payBDT||0}</span>
-        <span class="bdg ${statusColor}">${t.status==='open'?'✅ Active':'🔒 Closed'}</span>
-      </div>
-      <div style="display:flex;gap:8px;margin-top:10px;flex-wrap:wrap">
-        <span class="task-info">👥 ${(t.totalSlots||1)-(t.slotsLeft||0)}/${t.totalSlots||1} done</span>
-        <span class="task-info">💰 ৳${t.escrowAmount||0} escrowed</span>
-        ${t.status==='open'?`<button class="btn br bau bsm" onclick="closeTask('${t.id}')">🔒 Close</button>`:''}
-      </div>
-    </div>`;
-  });
-  return html;
-}
-
-async function closeTask(taskId){
-  if(!window.confirm('এই task close করবেন?')) return;
-  await fDB.ref(`mj_tasks/${taskId}/status`).set('closed');
-  // Refund remaining escrow (simplified)
-  const snap = await fDB.ref(`mj_tasks/${taskId}`).once('value');
-  const t = snap.val();
-  if(t && t.slotsLeft > 0){
-    const refundAmt = t.slotsLeft * (t.payBDT||0);
-    await fDB.ref(`users/${t.buyerUid}/mjBalance`).transaction(v=>(v||0)+refundAmt);
-    toast(`✅ Task closed. ৳${refundAmt} refunded!`,'s');
-  } else {
-    toast('Task closed','s');
-  }
-  render();
-}
-
-function buildPostTaskForm(){
-  const ud = S.userData||{};
-  const balance = ud.mjBalance||0;
-  let html = `<div class="escrow-box">
-    <div class="dfb mb8">
-      <div class="fw7 sm">💰 আপনার Balance</div>
-      <div class="fw7" style="color:#059669">৳${balance.toFixed(0)}</div>
-    </div>
-    <div class="xs mu">Task post করতে escrow balance লাগবে। কম থাকলে Deposit করুন।</div>
-  </div>
-  <div class="card">
-    <div class="card-hd">➕ নতুন Task Post করুন</div>
-    <label class="lbl">Task Title *</label>
-    <input class="inp" id="pt_title" placeholder="e.g. Facebook page এ Like করুন">
-    <label class="lbl">Category *</label>
-    <select class="inp" id="pt_cat">
-      ${TASK_CATS.filter(c=>c.id!=='all').map(c=>`<option value="${c.id}">${c.icon} ${c.label}</option>`).join('')}
-    </select>
-    <label class="lbl">বিস্তারিত বিবরণ *</label>
-    <textarea class="inp" id="pt_desc" rows="5" placeholder="কী কাজ করতে হবে বিস্তারিত লিখুন..."></textarea>
-    <label class="lbl">Requirements (optional)</label>
-    <textarea class="inp" id="pt_req" rows="3" placeholder="কোনো বিশেষ শর্ত থাকলে লিখুন..."></textarea>
-    <label class="lbl">প্রতি কাজে Payment (BDT) *</label>
-    <input class="inp" id="pt_pay" type="number" min="5" placeholder="e.g. 20">
-    <label class="lbl">মোট Worker সংখ্যা (Slots) *</label>
-    <input class="inp" id="pt_slots" type="number" min="1" placeholder="e.g. 10">
-    <label class="lbl">Deadline</label>
-    <input class="inp" id="pt_deadline" type="date">
-    <label class="lbl">Proof Type *</label>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:14px">
-      <button class="mb2 sel" id="pt_proof_sc" onclick="selectProofType('screenshot')">📸 Screenshot</button>
-      <button class="mb2" id="pt_proof_tx" onclick="selectProofType('text')">📝 Text/Link</button>
-    </div>
-    <input type="hidden" id="pt_prooftype" value="screenshot">
-    <div class="escrow-box" id="escrowPreview" style="display:none">
-      <div class="dfb">
-        <span class="sm fw6">মোট Escrow Amount:</span>
-        <span class="fw7 cgr" id="escrowCalc">৳0</span>
-      </div>
-    </div>
-    <button class="btn bp mt8" id="postTaskBtn" onclick="submitPostTask()">🚀 Task Post করুন</button>
-  </div>`;
-
-  setTimeout(()=>{
-    const calcEscrow = ()=>{
-      const pay = parseFloat(document.getElementById('pt_pay')?.value)||0;
-      const slots = parseInt(document.getElementById('pt_slots')?.value)||0;
-      const total = pay * slots;
-      const prev = document.getElementById('escrowPreview');
-      const calc = document.getElementById('escrowCalc');
-      if(prev) prev.style.display = total>0?'block':'none';
-      if(calc) calc.textContent = `৳${total.toFixed(0)}`;
-    };
-    document.getElementById('pt_pay')?.addEventListener('input', calcEscrow);
-    document.getElementById('pt_slots')?.addEventListener('input', calcEscrow);
-    const postBtn = document.getElementById('postTaskBtn');
-    if(postBtn) postBtn.onclick = submitPostTask;
-  }, 100);
-
-  return html;
-}
-
-function selectProofType(type){
-  document.getElementById('pt_prooftype').value = type;
-  document.getElementById('pt_proof_sc').classList.toggle('sel', type==='screenshot');
-  document.getElementById('pt_proof_tx').classList.toggle('sel', type==='text');
-}
-
-async function submitPostTask(){
-  const uid = S.user?.uid;
-  const title = document.getElementById('pt_title')?.value.trim();
-  const cat = document.getElementById('pt_cat')?.value;
-  const desc = document.getElementById('pt_desc')?.value.trim();
-  const req = document.getElementById('pt_req')?.value.trim();
-  const pay = parseFloat(document.getElementById('pt_pay')?.value)||0;
-  const slots = parseInt(document.getElementById('pt_slots')?.value)||0;
-  const deadline = document.getElementById('pt_deadline')?.value||'';
-  const proofType = document.getElementById('pt_prooftype')?.value||'screenshot';
-
-  if(!title||!desc||!pay||!slots){ toast('সব * field পূরণ করুন','e'); return; }
-  if(pay < 5){ toast('Minimum ৳5 per task','e'); return; }
-  if(slots < 1){ toast('Minimum 1 slot','e'); return; }
-
-  const totalCost = pay * slots;
-  const ud = S.userData||{};
-  if((ud.mjBalance||0) < totalCost){
-    toast(`Balance কম! ৳${totalCost} লাগবে, আপনার ৳${(ud.mjBalance||0).toFixed(0)} আছে`,'e');
-    S.mjTab = 'buyer_wallet'; render(); return;
-  }
-
-  const btn = document.getElementById('postTaskBtn');
-  if(btn){ btn.disabled=true; btn.textContent='⏳ Posting…'; }
-
-  // Deduct from balance (Escrow)
-  await fDB.ref(`users/${uid}/mjBalance`).transaction(v=>(v||0)-totalCost);
-  S.userData.mjBalance = (ud.mjBalance||0) - totalCost;
-
-  const taskData = {
-    title, category:cat, description:desc, requirements:req||'',
-    payBDT:pay, totalSlots:slots, slotsLeft:slots,
-    escrowAmount:totalCost, deadline:deadline||'No deadline',
-    proofType, status:'open', buyerUid:uid,
-    buyerName: ud.name||ud.email,
-    createdAt: Date.now(),
-  };
-
-  await fDB.ref('mj_tasks').push().set(taskData);
-  // Global task counter
-  await fDB.ref('stats/totalTasks').transaction(v=>(v||0)+1);
-
-  toast(`✅ Task post হয়েছে! ৳${totalCost} escrow হয়েছে`,'s');
-  S.mjTab = 'mytasks'; render();
-}
-
-async function buildReviewApplications(){
-  const uid = S.user?.uid;
-  // Get all tasks by this buyer
-  const taskSnap = await fDB.ref('mj_tasks').orderByChild('buyerUid').equalTo(uid).once('value');
-  const tasks = taskSnap.val()||{};
-  const taskIds = Object.keys(tasks);
-
-  if(!taskIds.length) return `<div class="empty"><div class="ein">📨</div><div class="etx">আপনার কোনো task নেই</div></div>`;
-
-  let allApps = [];
-  for(const tid of taskIds){
-    const appSnap = await fDB.ref(`mj_applications/${tid}`).once('value');
-    const apps = appSnap.val()||{};
-    Object.entries(apps).forEach(([workerUid,app])=>{
-      if(app.status==='pending') allApps.push({...app, workerUid, taskId:tid});
-    });
-  }
-
-  if(!allApps.length) return `<div class="empty"><div class="ein">📨</div><div class="etx">কোনো pending application নেই</div></div>`;
-
-  let html = `<div style="font-size:12px;color:#475569;margin-bottom:12px">মোট ${allApps.length}টি application review বাকি</div>`;
-
-  allApps.forEach(app=>{
-    html += `<div class="card" style="margin-bottom:12px">
-      <div class="dfb mb8">
-        <div class="fw7 sm">${escHtml(app.userName||app.workerUid)}</div>
-        <span class="bdg bdy">⏳ Pending</span>
-      </div>
-      <div class="xs mu mb8">Task: ${escHtml(app.taskTitle||app.taskId)}</div>
-      ${app.proofType==='screenshot'&&app.proofData?
-        `<img class="proof-img" src="${app.proofData}" alt="proof" onerror="this.style.display='none'">`
-        :`<div class="cbox">${escHtml(app.proofData||'—')}</div>`
-      }
-      <div style="display:flex;gap:8px;margin-top:8px">
-        <button class="btn bg bau" style="flex:1" onclick="reviewApp('${app.taskId}','${app.workerUid}','approve')">✅ Approve</button>
-        <button class="btn br bau" style="flex:1" onclick="reviewApp('${app.taskId}','${app.workerUid}','reject')">❌ Reject</button>
-      </div>
-    </div>`;
-  });
-  return html;
-}
-
-async function reviewApp(taskId, workerUid, action){
-  const note = action==='reject' ? (prompt('Rejection কারণ লিখুন (optional):') || '') : '';
-  // Update application status
-  await fDB.ref(`mj_applications/${taskId}/${workerUid}/status`).set(action==='approve'?'approved':'rejected');
-  if(note) await fDB.ref(`mj_applications/${taskId}/${workerUid}/note`).set(note);
-  await fDB.ref(`mj_user_apps/${workerUid}/${taskId}/status`).set(action==='approve'?'approved':'rejected');
-  if(note) await fDB.ref(`mj_user_apps/${workerUid}/${taskId}/note`).set(note);
-
-  if(action==='approve'){
-    // Get task pay
-    const taskSnap = await fDB.ref(`mj_tasks/${taskId}`).once('value');
-    const task = taskSnap.val()||{};
-    const payBDT = task.payBDT||0;
-    // Credit worker (convert BDT to USD approx)
-    const usdAmt = payBDT * 0.0091; // approx 1 BDT = 0.0091 USD
-    await fDB.ref(`users/${workerUid}/usdEarned`).transaction(v=>(v||0)+usdAmt);
-    await fDB.ref(`users/${workerUid}/mjTasksDone`).transaction(v=>(v||0)+1);
-    // Reduce slots
-    await fDB.ref(`mj_tasks/${taskId}/slotsLeft`).transaction(v=>Math.max(0,(v||0)-1));
-    // Notify worker
-    await fDB.ref(`mj_notifications/${workerUid}`).push({
-      type:'task_approved', taskId, taskTitle:task.title,
-      payBDT, createdAt:Date.now(), read:false,
-    });
-    toast(`✅ Approved! ৳${payBDT} worker কে দেওয়া হয়েছে`,'s');
-  } else {
-    // Refund to buyer
-    const taskSnap = await fDB.ref(`mj_tasks/${taskId}`).once('value');
-    const task = taskSnap.val()||{};
-    const buyerUid = task.buyerUid;
-    await fDB.ref(`users/${buyerUid}/mjBalance`).transaction(v=>(v||0)+(task.payBDT||0));
-    await fDB.ref(`mj_notifications/${workerUid}`).push({
-      type:'task_rejected', taskId, taskTitle:task.title,
-      note, createdAt:Date.now(), read:false,
-    });
-    toast('Rejected — refunded to buyer','s');
-  }
-  S.mjTab='review_apps'; render();
-}
-
-function buildBuyerWallet(){
-  const ud = S.userData||{};
-  return `<div class="card" style="text-align:center;background:linear-gradient(135deg,#1e40af,#065f46);border:none;margin-bottom:14px">
-    <div style="font-size:12px;color:rgba(255,255,255,.7);margin-bottom:4px">MicroJob Balance</div>
-    <div class="sf" style="font-size:36px;font-weight:800;color:#fbbf24">৳${(ud.mjBalance||0).toFixed(0)}</div>
-    <div style="font-size:11px;color:rgba(255,255,255,.5);margin-top:4px">Task post করতে এই balance ব্যবহার হবে</div>
-  </div>
-  <div class="card">
-    <div class="card-hd">💳 Deposit করুন</div>
-    <div style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:10px;padding:11px 13px;font-size:12px;color:#1e40af;margin-bottom:14px">
-      📢 Deposit করতে নিচের account এ bKash/Nagad পাঠিয়ে screenshot দিন। Admin verify করলে balance যোগ হবে।
-    </div>
-    <div style="background:#f8fafc;border:1.5px solid #dbeafe;border-radius:10px;padding:13px;margin-bottom:14px">
-      <div class="xs mu mb8">bKash Personal:</div>
-      <div class="fw7" style="font-size:16px;color:#2563eb;letter-spacing:.05em">01XXXXXXXXX</div>
-      <div class="xs mu mt8">Nagad:</div>
-      <div class="fw7" style="font-size:16px;color:#2563eb;letter-spacing:.05em">01XXXXXXXXX</div>
-    </div>
-    <label class="lbl">পাঠানো Amount (BDT)</label>
-    <input class="inp" id="dep_amt" type="number" min="50" placeholder="e.g. 500">
-    <label class="lbl">Transaction ID</label>
-    <input class="inp" id="dep_txn" placeholder="bKash/Nagad Transaction ID">
-    <label class="lbl">Screenshot (optional)</label>
-    <div class="task-proof-box" onclick="document.getElementById('dep_img_input').click()">
-      <div id="dep_img_preview" style="display:none"><img id="dep_img_el" class="proof-img" src=""></div>
-      <div id="dep_placeholder">📸 Screenshot Upload করুন</div>
-      <input type="file" id="dep_img_input" accept="image/*" style="display:none">
-    </div>
-    <button class="btn bp mt8" id="depSubmitBtn" onclick="submitDepositRequest()">📨 Deposit Request পাঠান</button>
-  </div>`;
-  // Wire image upload inline
-  setTimeout(()=>{
-    const di = document.getElementById('dep_img_input');
-    if(di) di.onchange = (e)=>{
-      const f=e.target.files[0]; if(!f) return;
-      if(f.size>2097152){toast('Max 2MB','e');return;}
-      const r=new FileReader();
-      r.onload=(ev)=>{
-        S.depImgData=ev.target.result;
-        const img=document.getElementById('dep_img_el');
-        if(img) img.src=ev.target.result;
-        const prev=document.getElementById('dep_img_preview');
-        const ph=document.getElementById('dep_placeholder');
-        if(prev) prev.style.display='block';
-        if(ph) ph.style.display='none';
-      };
-      r.readAsDataURL(f);
-    };
-  },200);
-}
-
-// ─── RATING SYSTEM ─────────────────────────────────────
-async function showRatingModal(targetUid, taskId, raterRole){
-  S.ratingTarget = {targetUid, taskId, raterRole};
-  const md = document.createElement('div');
-  md.id = 'ratingModal';
-  md.style.cssText = 'position:fixed;inset:0;z-index:9000;background:rgba(15,23,42,.7);display:flex;align-items:center;justify-content:center;padding:20px';
-  md.innerHTML = `<div style="background:#fff;border-radius:18px;padding:24px;max-width:340px;width:100%;animation:popIn .2s ease">
-    <div class="sf" style="font-size:17px;font-weight:700;margin-bottom:4px">⭐ Rating দিন</div>
-    <div class="xs mu mb16">আপনার অভিজ্ঞতা শেয়ার করুন</div>
-    <div class="star-row" id="starRow">
-      ${[1,2,3,4,5].map(i=>`<span class="star" data-v="${i}" onclick="selectStar(${i})">☆</span>`).join('')}
-    </div>
-    <textarea class="inp mt12" id="ratingComment" rows="3" placeholder="Optional: মন্তব্য লিখুন..."></textarea>
-    <div style="display:flex;gap:8px;margin-top:4px">
-      <button class="btn bp" style="flex:1" onclick="submitRating()">⭐ Submit</button>
-      <button class="btn bh bau" onclick="document.getElementById('ratingModal').remove()">Cancel</button>
-    </div>
-  </div>`;
-  document.body.appendChild(md);
-  S._selectedStars = 0;
-}
-
-function selectStar(v){
-  S._selectedStars = v;
-  const stars = document.querySelectorAll('#starRow .star');
-  stars.forEach((s,i)=>{ s.textContent = i<v?'★':'☆'; });
-}
-
-async function submitRating(){
-  const {targetUid,taskId,raterRole} = S.ratingTarget||{};
-  if(!S._selectedStars){ toast('Star দিন','w'); return; }
-  const comment = document.getElementById('ratingComment')?.value.trim()||'';
-  const ratingData = {
-    raterUid: S.user.uid,
-    raterName: S.userData.name||S.userData.email,
-    rating: S._selectedStars,
-    comment,
-    taskId,
-    raterRole,
-    createdAt: Date.now(),
-  };
-  await fDB.ref(`mj_ratings/${targetUid}`).push(ratingData);
-  // Update avg rating
-  const snap = await fDB.ref(`mj_ratings/${targetUid}`).once('value');
-  const all = Object.values(snap.val()||{});
-  const avg = all.reduce((s,r)=>s+(r.rating||0),0)/all.length;
-  await fDB.ref(`users/${targetUid}/mjAvgRating`).set(Math.round(avg*10)/10);
-  await fDB.ref(`users/${targetUid}/mjRatingCount`).set(all.length);
-  document.getElementById('ratingModal')?.remove();
-  toast('✅ Rating দেওয়া হয়েছে!','s');
-}
-
-// ─── NOTIFICATION SYSTEM ───────────────────────────────
-async function loadMJNotifications(){
-  if(!S.user) return;
-  const snap = await fDB.ref(`mj_notifications/${S.user.uid}`).orderByChild('read').equalTo(false).once('value');
-  const data = snap.val()||{};
-  S.mjNotifCount = Object.keys(data).length;
-  S.mjNotifs = Object.entries(data).map(([id,n])=>({...n,id})).sort((a,b)=>b.createdAt-a.createdAt);
-}
-
-async function buildMJNotifications(){
-  await loadMJNotifications();
-  if(!S.mjNotifs?.length) return `<div class="empty"><div class="ein">🔔</div><div class="etx">কোনো নতুন notification নেই</div></div>`;
-  let html = `<button class="btn bh bau bsm mb12" onclick="markAllNotifsRead()">✓ সব পড়েছি</button>`;
-  S.mjNotifs.forEach(n=>{
-    const icons = {new_application:'📨',task_approved:'✅',task_rejected:'❌'};
-    const msgs = {
-      new_application:`নতুন application: "${n.workerName}" আপনার task apply করেছে`,
-      task_approved:`✅ Task approved! ৳${n.payBDT||0} আপনার wallet এ যোগ হয়েছে`,
-      task_rejected:`❌ Task rejected. ${n.note?'কারণ: '+n.note:''}`,
-    };
-    html += `<div class="nc-item">
-      <div style="font-size:20px">${icons[n.type]||'🔔'}</div>
-      <div style="flex:1"><div class="sm fw6">${msgs[n.type]||n.type}</div><div class="xs mu mt8">${timeAgo(n.createdAt)}</div></div>
-    </div>`;
-  });
-  return html;
-}
-
-async function markAllNotifsRead(){
-  if(!S.user) return;
-  const updates = {};
-  (S.mjNotifs||[]).forEach(n=>{ updates[`${n.id}/read`]=true; });
-  await fDB.ref(`mj_notifications/${S.user.uid}`).update(updates);
-  S.mjNotifCount = 0;
-  toast('সব notification পড়া হয়েছে','s');
-  render();
-}
-
-// ─── ADMIN: TASK MANAGEMENT ────────────────────────────
-async function loadAdminTasks(c){
-  const snap = await fDB.ref('mj_tasks').limitToLast(30).once('value');
-  const data = snap.val()||{};
-  const tasks = Object.entries(data).map(([id,t])=>({...t,id})).sort((a,b)=>(b.createdAt||0)-(a.createdAt||0));
-
-  if(!tasks.length){ c.innerHTML=`<div class="empty"><div class="ein">📋</div><div class="etx">কোনো task নেই</div></div>`; return; }
-
-  c.innerHTML = `<div class="card-hd mb12">সব MicroJobs (${tasks.length})</div>` +
-  tasks.map(t=>`<div class="arow">
-    <div class="arow-l">
-      <div class="fw6 sm">${escHtml(t.title||'')}</div>
-      <div class="xs mu">৳${t.payBDT} × ${t.totalSlots} slots · Buyer: ${t.buyerUid?.slice(0,8)||'?'}…</div>
-      <div class="xs mu">${fmtD(t.createdAt)} · Status: ${t.status}</div>
-    </div>
-    <div class="arow-bt">
-      <span class="bdg ${t.status==='open'?'bdg2':'bdy'}">${t.status}</span>
-      <button class="btn br bau bsm" data-del-task="${t.id}">🗑</button>
-    </div>
-  </div>`).join('');
-
-  c.querySelectorAll('[data-del-task]').forEach(btn=>{
-    btn.onclick = async()=>{
-      if(!confirm('Delete this task?')) return;
-      await fDB.ref(`mj_tasks/${btn.dataset.delTask}`).remove();
-      toast('Deleted','s'); loadAdminTasks(c);
-    };
-  });
-}
-
-async function loadAdminDeposits(c){
-  const snap = await fDB.ref('mj_deposits').orderByChild('status').equalTo('pending').once('value');
-  const data = snap.val()||{};
-  const deps = Object.entries(data).map(([id,d])=>({...d,id})).sort((a,b)=>b.createdAt-a.createdAt);
-
-  if(!deps.length){ c.innerHTML=`<div class="empty"><div class="ein">💳</div><div class="etx">কোনো pending deposit নেই</div></div>`; return; }
-
-  c.innerHTML = deps.map(d=>`<div class="arow">
-    <div class="arow-l">
-      <div class="fw6 sm">${d.userName||d.uid} — <span class="cy">৳${d.amount}</span></div>
-      <div class="xs mu">TXN: ${d.txnId||'—'}</div>
-      <div class="xs mu">${fmtD(d.createdAt)}</div>
-    </div>
-    <div class="arow-bt">
-      <button class="btn bg bau bsm" data-dep="${d.id}" data-uid="${d.uid}" data-amt="${d.amount}" data-daction="approve">✅ Approve</button>
-      <button class="btn br bau bsm" data-dep="${d.id}" data-daction="reject">❌ Reject</button>
-    </div>
-  </div>`).join('');
-
-  c.querySelectorAll('[data-dep]').forEach(btn=>{
-    btn.onclick = async()=>{
-      const id = btn.dataset.dep;
-      const action = btn.dataset.daction;
-      btn.disabled=true;
-      if(action==='approve'){
-        const amt = parseFloat(btn.dataset.amt)||0;
-        const uid = btn.dataset.uid;
-        await fDB.ref(`users/${uid}/mjBalance`).transaction(v=>(v||0)+amt);
-        await fDB.ref(`mj_deposits/${id}/status`).set('approved');
-        toast(`✅ ৳${amt} credited!`,'s');
-      } else {
-        await fDB.ref(`mj_deposits/${id}/status`).set('rejected');
-        toast('Rejected','s');
-      }
-      loadAdminDeposits(c);
-    };
-  });
-}
-
-// ─── ESCROW DEPOSIT SUBMIT ─────────────────────────────
-async function submitDepositRequest(){
-  const uid = S.user?.uid;
-  if(!uid){ toast('Login করুন','e'); return; }
-  const amtEl = document.getElementById('dep_amt');
-  const txnEl = document.getElementById('dep_txn');
-  const amt = parseFloat(amtEl?.value)||0;
-  const txn = txnEl?.value.trim()||'';
-  if(!amt||amt<50){ toast('Minimum ৳50 deposit করুন','e'); return; }
-  if(!txn){ toast('Transaction ID দিন','e'); return; }
-  const btn = document.getElementById('depSubmitBtn');
-  if(btn){ btn.disabled=true; btn.textContent='⏳ Sending…'; }
-  try {
-    const depData = {
-      uid,
-      userName: S.userData?.name||S.userData?.email||uid,
-      amount: amt, txnId: txn,
-      imgData: S.depImgData||'',
-      status:'pending', createdAt:Date.now(),
-    };
-    await fDB.ref('mj_deposits').push().set(depData);
-    // Notify admin via notices path
-    await fDB.ref('mj_admin_alerts').push({type:'deposit',uid,amount:amt,txnId:txn,createdAt:Date.now()});
-    toast('✅ Deposit request পাঠানো হয়েছে! Admin verify করলে balance আসবে।','s');
-    S.depImgData = null;
-    if(amtEl) amtEl.value='';
-    if(txnEl) txnEl.value='';
-  } catch(e){ toast('Error: '+e.message,'e'); }
-  if(btn){ btn.disabled=false; btn.textContent='📨 Deposit Request পাঠান'; }
-}
-
-// ─── HELPER: HTML Escape ───────────────────────────────
-function escHtml(str){
-  return String(str||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
-}
-
-
-// ─── ATTACH MJ EVENTS AFTER RENDER ───────────────────
-// attachMJEvents moved to loader block above
-
-// ─── ASYNC PAGE LOADER PATCH ──────────────────────────
-// ─── ROBUST ASYNC MJ PAGE LOADER ─────────────────────
-const _origAttachAppEvents = attachAppEvents;
-function attachAppEvents(){
-  _origAttachAppEvents();
-  loadMJPage();
-}
-
-async function loadMJPage(){
-  try {
-    // Tasks Page
-    const tasksHolder = document.getElementById('tasksPageHolder');
-    if(tasksHolder){
-      const html = await buildTasksPage();
-      const el = document.getElementById('tasksPageHolder');
-      if(el){ el.outerHTML = html; }
-      attachMJEvents();
-      return;
-    }
-    // Task Detail Page
-    const detailHolder = document.getElementById('taskDetailHolder');
-    if(detailHolder){
-      const html = await buildTaskDetail();
-      const el = document.getElementById('taskDetailHolder');
-      if(el){ el.outerHTML = html; }
-      return;
-    }
-    // MJ Notifications Page
-    const notifsHolder = document.getElementById('mjNotifsHolder');
-    if(notifsHolder){
-      const html = await buildMJNotifications();
-      const el = document.getElementById('mjNotifsHolder');
-      if(el){ el.innerHTML = '<div class="ph"><div class="pt">🔔 MJ Notifications</div><div class="ps">তোমার সব notification এখানে</div></div>' + html; }
-      return;
-    }
-    // Always load notif count
-    await loadMJNotifications();
-  } catch(e){ console.error('MJ page load error:', e); }
-}
-
-function attachMJEvents(){
-  const depBtn = document.getElementById('depSubmitBtn');
-  if(depBtn) depBtn.onclick = submitDepositRequest;
-  const depImg = document.getElementById('dep_img_input');
-  if(depImg){
-    depImg.onchange = (e)=>{
-      const f = e.target.files[0]; if(!f) return;
-      const r = new FileReader();
-      r.onload = (ev)=>{
-        S.depImgData = ev.target.result;
-        const el = document.getElementById('dep_img_el');
-        if(el){ el.src=ev.target.result; }
-        const prev = document.getElementById('dep_img_preview');
-        const ph = document.getElementById('dep_placeholder');
-        if(prev) prev.style.display='block';
-        if(ph) ph.style.display='none';
-      };
-      r.readAsDataURL(f);
-    };
-  }
-}
-
-</script>
+<script async="async" data-cfasync="false" src="https://pl29327203.profitablecpmratenetwork.com/71a6c6e0d4a4a4c387b3be64cbb9dc23/invoke.js"></script>
 <div id="container-71a6c6e0d4a4a4c387b3be64cbb9dc23"></div>
 </body>
 </html>
